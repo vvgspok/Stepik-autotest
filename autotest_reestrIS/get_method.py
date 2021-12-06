@@ -24,6 +24,7 @@ try:
     l = browser.find_elements_by_xpath("//*[@class='tableFloatingHeaderOriginal]").text
     print(l)
 
+    # добавил измменения
 finally:
     time.sleep(3)
     browser.quit()
