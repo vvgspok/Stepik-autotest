@@ -21,6 +21,7 @@ try:
     # Переход в Реестр ИС
     browser.get(
         "http://rc.alfa-doc.ru/cabinet/infosystem_registry/infosystem_registry/infosystem_registry/#step/registry")
+
     search = True
     while search:
         try:
@@ -30,9 +31,11 @@ try:
             search = False
 
     # нажатие всех кнопко Развернуть
-    # all_buttons = browser.find_elements_by_xpath("//*[@class='cell-expand-text' and contains(.,'развернуть') and not(@style='display: none;')]")
-    # for expand in all_buttons:
-    #   expand.click()
+    all_buttons = browser.find_elements_by_xpath(
+        "//*[@class='cell-expand-text' and contains(.,'развернуть') and not(@style='display: none;')]")
+    for expand in all_buttons:
+        expand.click()
+
     column_N = browser.find_elements_by_xpath("(//th[@class='col-fixed nowrap row_number tight-column'])[1]")
     column_N_text = column_N[0].text
     assert "№ П/П" == column_N_text, f"Нет колонки {column_N_text}"
@@ -40,8 +43,8 @@ try:
     column_K = browser.find_elements_by_xpath("(//th[@class='nowrap card_infosystem tight-column'])[1]")
 
     column_IS = browser.find_elements_by_xpath("(//th[@class='orderable sortable name'])[1]")
-    #column_IS_text = column_IS[0].text
-   # assert "НАИМЕНОВАНИЕ ИС" == column_IS_text, f"Нет колонки {column_IS_text}"
+    # column_IS_text = column_IS[0].text
+    # assert "НАИМЕНОВАНИЕ ИС" == column_IS_text, f"Нет колонки {column_IS_text}"
 
     column_PK = browser.find_elements_by_xpath("(//th[@class='software_by_rate'])[1]")
     column_PK_text = column_PK[0].text
@@ -72,12 +75,12 @@ try:
         print("НАИМЕНОВАНИЕ ИС = ", i3.text)
     print("---------------------")
 
-    element4 = browser.find_elements_by_xpath("//*[contains(@class,'infosystems-table')]//tbody//tr[1]/td[4]")
+    element4 = browser.find_elements_by_xpath("//*[contains(@class,'infosystems-table')]//tbody//tr[1]/td[4]/div")
     for i4 in element4:
         print("ПРОГРАММНЫЕ КОМПЛЕКСЫ = ", i4.text)
     print("---------------------")
 
-    element5 = browser.find_elements_by_xpath("//*[contains(@class,'infosystems-table')]//tbody//tr[1]/td[5]")
+    element5 = browser.find_elements_by_xpath("//*[contains(@class,'infosystems-table')]//tbody//tr[1]/td[5]/div")
     for i5 in element5:
         print("МЕСТО РАСПОЛОЖЕНИЯ = ", i5.text)
     print("---------------------")
@@ -102,9 +105,21 @@ try:
         print("СВЕДЕНИЯ ОБ АТТЕСТАЦИИ = ", i9.text)
     print("---------------------")
 
-    # browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/company_details/#step/aims")
+    # Переход на шаг Цели и способы обработки
+    browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/company_details/#step/aims")
 
+    search = True
+    while search:
+        try:
+            browser.find_element_by_css_selector(".loading")
+            time.sleep(0.5)
+        except:
+            search = False
+
+    find_column_IS = browser.find_elements_by_xpath("//*[text()='Информационная система «Бухгалтерский учет_НЕ_КИИ»']")
+    for i in find_column_IS:
+        print(i.text)
 
 finally:
-    time.sleep(3)
+    #time.sleep(3)
     browser.quit()
