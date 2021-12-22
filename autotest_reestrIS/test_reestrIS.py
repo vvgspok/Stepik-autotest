@@ -9,7 +9,6 @@ try:
     link = "http://rc.alfa-doc.ru/accounts/login/"
     browser = webdriver.Chrome()
     browser.get(link)
-    # browser.implicitly_wait(5)
     reg = browser.find_element_by_xpath("//*[@class='text-center']/a").click()
     login = browser.find_element_by_id("loginInput")
     login.send_keys(log)
@@ -22,13 +21,12 @@ try:
     browser.get(
         "http://rc.alfa-doc.ru/cabinet/infosystem_registry/infosystem_registry/infosystem_registry/#step/registry")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     # нажатие всех кнопко Развернуть
     all_buttons = browser.find_elements_by_xpath(
@@ -118,9 +116,11 @@ try:
         except:
             search = False
 
-    find_column_IS = browser.find_element_by_xpath("//*[@class='table-responsive']//tbody//tr[2]/td[5]")
+    find_column_IS = browser.find_element_by_xpath(
+        "//*[@class='ksb-table-wrapper']//*[contains(text(),'" + element3_text + "')]")
     find_column_IS_text = find_column_IS.text
     print(find_column_IS_text)
+    assert element3_text == find_column_IS_text
 
     # Переход в ПК
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/company_details/#step/softwares")

@@ -21,13 +21,12 @@ try:
     # Переход в ПК
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/company_details/#step/softwares")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     find_column_PK1 = browser.find_element_by_xpath(
         "//*[contains(@class,'table-hover -table-hover table-body-bordered table-bordered')]//tbody[2]//tr[2]/td[1]")
