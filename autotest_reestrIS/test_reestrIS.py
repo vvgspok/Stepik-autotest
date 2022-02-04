@@ -34,7 +34,6 @@ try:
     for expand in all_buttons:
         expand.click()
 
-    # Поиск колонок
     column_N = browser.find_element_by_xpath("(//th[@class='col-fixed nowrap row_number tight-column'])[1]")
     column_N_text = column_N.text
     assert "№ П/П" == column_N_text, f"Нет колонки {column_N_text}"
@@ -108,13 +107,12 @@ try:
     # Переход на шаг Цели и способы обработки
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/company_details/#step/aims")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     find_column_IS = browser.find_element_by_xpath(
         "//*[@class='ksb-table-wrapper']//*[contains(text(),'" + element3_text + "')]")
@@ -125,13 +123,12 @@ try:
     # Переход в ПК
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/company_details/#step/softwares")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     find_column_PK1 = browser.find_element_by_xpath(
         "//*[contains(@class,'table-hover -table-hover table-body-bordered table-bordered')]//tbody[2]//tr[2]/td[1]")
@@ -151,13 +148,12 @@ try:
     # Переход в ПДн
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/personal_data/#step/software_parameters")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     find_column_Y3 = browser.find_element_by_xpath("//*[contains(@class,'table-bordered')]//tbody//tr[1]/td[3]")
     find_column_Y3_text = find_column_Y3.text
@@ -166,13 +162,12 @@ try:
     # Переход в ГИС
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/gis/#step/softwares")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     find_column_KZ = browser.find_element_by_xpath("//*[contains(@class,'table-bordered')]//tbody//tr[1]/td[3]")
     find_column_KZ_text = find_column_KZ.text
@@ -181,13 +176,12 @@ try:
     # Переход в Аттестацию
     browser.get("http://rc.alfa-doc.ru/cabinet/main_wizard/attestation/#step/infosystem-certification")
 
-    search = True
-    while search:
-        try:
+    try:
+        while True:
             browser.find_element_by_css_selector(".loading")
             time.sleep(0.5)
-        except:
-            search = False
+    except:
+        pass
 
     find_column_AT = browser.find_element_by_xpath("//*[contains(@class,'table-bordered')]//tbody//tr[1]/td[2]")
     find_column_AT_text = find_column_AT.text
