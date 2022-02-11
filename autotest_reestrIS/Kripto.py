@@ -19,7 +19,6 @@ class TestGeneral():
     def test_step1(self):
 
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/common")
-
         BasePage.ожидание_прогрузки_страницы(self)
 
         # Проверка кол-ва шагов на странице
@@ -27,28 +26,31 @@ class TestGeneral():
         #len_step = len(self.browser.find_elements_by_xpath("//*[@class='step-name']"))
         #assert len_step == 5, "Кол-во шагов != 5"
 
-        field_inn = self.browser.find_element_by_xpath("//*[@id='id_inn']")
-        field_kpp = self.browser.find_element_by_xpath("//*[@id='id_kpp']")
-        field_ogrn = self.browser.find_element_by_xpath("//*[@id='id_ogrn']")
-        field_short = self.browser.find_element_by_xpath("//*[@id='id_short_name_0']")
-        field_full = self.browser.find_element_by_xpath("//*[@id='id_full_name_0']")
-        field_disease = self.browser.find_element_by_xpath("//*[@id='id_symbol_0']")
-        field_org_type = self.browser.find_element_by_xpath("//*[@id='id_kind']")
-        field_name_doc = self.browser.find_element_by_xpath("//*[@id='id_charter']")
-        field_activity_licenses = self.browser.find_element_by_xpath("//*[@class='select2-search-choice ui-sortable-handle']")
-        field_checkbox_off_website = self.browser.find_element_by_xpath("//*[@id='id_has_website']")
-        field_locality = self.browser.find_element_by_xpath("//*[@id='id_locality']")
-        field_legal_index = self.browser.find_element_by_xpath("//*[@id='id_legal_address_0']")
-        field_legal_address = self.browser.find_element_by_xpath("//*[@id='id_legal_address_1']")
-        field_actual_index = self.browser.find_element_by_xpath("//*[@id='id_actual_address_0']")
-        field_actual_address = self.browser.find_element_by_xpath("//*[@id='id_actual_address_1']")
-        field_mailing_index = self.browser.find_element_by_xpath("//*[@id='id_mailing_address_0']")
-        field_mailing_address = self.browser.find_element_by_xpath("//*[@id='id_mailing_address_1']")
-        field_email = self.browser.find_element_by_xpath("//*[@id = 'id_email']")
-        field_checkbox_department = self.browser.find_element_by_xpath("//*[@id='id_has_departments']")
+        field_inn = self.browser.find_element_by_xpath("//*[@id='id_inn']")  # ИНН
+        field_kpp = self.browser.find_element_by_xpath("//*[@id='id_kpp']")  # КПП
+        field_ogrn = self.browser.find_element_by_xpath("//*[@id='id_ogrn']")  # ОГРН
+        field_short = self.browser.find_element_by_xpath("//*[@id='id_short_name_0']")  # Краткое наименование организации
+        field_full = self.browser.find_element_by_xpath("//*[@id='id_full_name_0']")  # Полное наименование организации
+        field_disease = self.browser.find_element_by_xpath("//*[@id='id_symbol_0']")  # Условное сокращение
+        field_org_type = self.browser.find_element_by_xpath("//*[@id='id_kind']")  # Тип организации
+        field_name_doc = self.browser.find_element_by_xpath("//*[@id='id_charter']")  # Наименование и реквизиты учредительного документа
+        field_activity_licenses = self.browser.find_element_by_xpath("//*[@class='select2-search-choice ui-sortable-handle']")  # Лицензии на вид деятельности
+        field_checkbox_off_website = self.browser.find_element_by_xpath("//*[@id='id_has_website']")  # Есть официальный сайт
+        field_locality = self.browser.find_element_by_xpath("//*[@id='id_locality']")  # Населённый пункт
+        field_legal_index = self.browser.find_element_by_xpath("//*[@id='id_legal_address_0']")  # Юридический адрес
+        field_legal_address = self.browser.find_element_by_xpath("//*[@id='id_legal_address_1']")  # Юридический адрес
+        field_actual_index = self.browser.find_element_by_xpath("//*[@id='id_actual_address_0']")  # Фактический адрес
+        field_actual_address = self.browser.find_element_by_xpath("//*[@id='id_actual_address_1']")  # Фактический адрес
+        field_mailing_index = self.browser.find_element_by_xpath("//*[@id='id_mailing_address_0']")  # Почтовый адрес
+        field_mailing_address = self.browser.find_element_by_xpath("//*[@id='id_mailing_address_1']")  # Почтовый адрес
+        field_email = self.browser.find_element_by_xpath("//*[@id = 'id_email']")  # Адрес электронной почты
+        field_checkbox_department = self.browser.find_element_by_xpath("//*[@id='id_has_departments']")  # Есть структурные подразделения
 
         field_inn = field_inn.get_attribute("value")
+
         print("\n",field_inn)
+        #field_inn = field_inn.get_attribute("readonly")
+        #print(field_inn)
 
         field_kpp = field_kpp.get_attribute("value")
         print(field_kpp)
@@ -102,29 +104,52 @@ class TestGeneral():
         field_checkbox_department = field_checkbox_department.get_attribute("value")
         print(field_checkbox_department)
 
-        '''
-        input_kpp = self.browser.find_element_by_xpath("//*[@class='form-group kpp-group']//*[@class='form-control']")
-        input_kpp.clear()
-        input_kpp.send_keys("123456789")
 
-        input_ogrn = self.browser.find_element_by_xpath(
-            "//*[@class='form-group required ogrn-group']//*[@class='form-control']")
-        input_ogrn.clear()
-        input_ogrn.send_keys("6053066791167")
+    def test_step2(self):
+        self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/structure")
+        BasePage.ожидание_прогрузки_страницы(self)
+        """
+        Загрузка списка структурных подразделений из файла 
+        """
+        self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-default']").click()
+        current_dir = os.path.abspath(os.path.dirname(__file__))
+        file_path = os.path.join(current_dir, 'SP.xlsx')
+        element = WebDriverWait(self.browser, 10).until(
+        EC.presence_of_element_located((By.ID, "id_upload_file")))
+        element.send_keys(file_path)
+        try:
+                WebDriverWait(self.browser, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Загружен файл')]")))
+        except Exception as e:
+            assert False, "Файл не загружается;" + e
+        self.browser.find_element_by_xpath("//*[@class='modal-content']//*[@class='btn btn-sm btn-success']").click()
 
-        input_locality = self.browser.find_element_by_xpath(
-            "//*[@class='form-group required locality-group']//*[@class='form-control']")
-        input_locality.clear()
-        input_locality.send_keys("Тест_Москва")
 
-        input_legal_index = self.browser.find_element_by_xpath("//*[@id='id_legal_address_0']")
-        input_legal_index.clear()
-        input_legal_index.send_keys("123456")
 
-        input_legal_address = self.browser.find_element_by_xpath("//*[@id='id_legal_address_1']")
-        input_legal_address.clear()
-        input_legal_address.send_keys("Чебоксары", enter)
-        '''
+    def test_step3(self):
+        self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/employees")
+        BasePage.ожидание_прогрузки_страницы(self)
+        """
+        Загрузка списка сотрудников из файла
+        """
+        self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-default']").click()
+        current_dir = os.path.abspath(os.path.dirname(__file__))
+        file_path = os.path.join(current_dir, 'worker.xlsx')
+        element = WebDriverWait(self.browser, 10).until(
+            EC.presence_of_element_located((By.ID, "id_upload_file")))
+        element.send_keys(file_path)
+        try:
+            WebDriverWait(self.browser, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Загружен файл')]")))
+        except Exception as e:
+            assert False, "Файл не загружается;" + e
+        self.browser.find_element_by_xpath("//*[@class='modal-content']//*[@class='btn btn-sm btn-success']").click()
 
-        time.sleep(2)
+    def test_step4(self):
+        self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/crypto-access-std")
+        BasePage.ожидание_прогрузки_страницы(self)
+
+    def test_step5(self):
+        self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/rooms_vaults")
+        BasePage.ожидание_прогрузки_страницы(self)
 

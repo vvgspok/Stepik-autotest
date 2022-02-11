@@ -21,6 +21,7 @@ try:
     browser.get(
         "http://rc.alfa-doc.ru/cabinet/infosystem_registry/infosystem_registry/infosystem_registry/#step/registry")
 
+
     try:
         while True:
             browser.find_element_by_css_selector(".loading")
