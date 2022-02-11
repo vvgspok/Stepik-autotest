@@ -1,0 +1,990 @@
+{
+  "step1": [
+      {
+          "org_type": {
+            "input": "",
+            "help_message": "Это поле обязательно."
+          },
+          "full_name": {
+            "input": "",
+            "help_message": "Это поле обязательно."
+          },
+          "email": {
+            "input": "",
+            "help_message": "Пожалуйста, введите email"
+          },
+          "username": {
+            "input": "",
+            "help_message": "Укажите имя пользователя, состоящее из латинских букв, цифр или символов @.+-_"
+          },
+          "phone": {
+            "input": "",
+            "help_message": "Укажите 11-значный контактный номер телефона"
+          },
+          "inn": {
+            "input": "",
+            "help_message": ""
+          },
+          "validation": "False"
+        },
+      {
+          "org_type": {
+            "input": "Юридическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Ivanov",
+            "help_message": "Это поле обязательно."
+          },
+          "email": {
+            "input": "test",
+            "help_message": "Введите правильный адрес электронной почты."
+          },
+          "username": {
+            "input": "test",
+            "help_message": "Указанное имя пользователя уже занято"
+          },
+          "phone": {
+            "input": "1",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "1",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+           "validation": "False"
+
+        },
+      {
+          "org_type": {
+            "input": "Юридическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов",
+            "help_message": "Укажите ФИО в формате: Фамилия Имя [Отчество]"
+          },
+          "email": {
+            "input": "test@",
+            "help_message": "Введите правильный адрес электронной почты."
+          },
+          "username": {
+            "input": "()",
+            "help_message": "Укажите имя пользователя, состоящее из латинских букв, цифр или символов @.+-_"
+          },
+          "phone": {
+            "input": "11",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "11",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+          "validation": "False"
+
+        },
+      {
+          "org_type": {
+            "input": "Юридическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test@test",
+            "help_message": "Введите правильный адрес электронной почты."
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+                "validation": "False"
+  },
+      {
+          "org_type": {
+            "input": "Юридическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test.ru",
+            "help_message": "Введите правильный адрес электронной почты."
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "1111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "1111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+          "validation": "False"
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test@.ru",
+            "help_message": "Введите правильный адрес электронной почты."
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "11111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+          "validation": "False"
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test@test.ru",
+            "help_message": "Указанный e-mail уже зарегистрирован"
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "111111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "111111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+                "validation": "False"
+  },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "1111111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "1111111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+                "validation": "False"
+  },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "11111111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+          "validation": "False"
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "111111111",
+            "help_message": "Укажите телефон в формате: 8 (832) 323-32-33"
+          },
+          "inn": {
+            "input": "111111111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+          "validation": "False"
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111111",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "11111111111",
+            "help_message": "Введите 10 или 12-значный ИНН"
+          },
+                  "validation": "False"
+
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111111",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "1111111111",
+            "help_message": "Проверьте корректность введенного ИНН"
+          },
+                  "validation": "False"
+
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111111",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "111111111111",
+            "help_message": "Проверьте корректность введенного ИНН"
+          },
+           "validation": "False"
+
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111112",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "0000000000",
+            "help_message": ""
+          },
+           "validation": "True"
+
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111112",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "000000000000",
+            "help_message": ""
+          },
+                  "validation": "True"
+
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111112",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "9102256128",
+            "help_message": ""
+          },
+                  "validation": "True"
+
+        },
+      {
+          "org_type": {
+            "input": "Физическое лицо",
+            "help_message": ""
+          },
+          "full_name": {
+            "input": "Иванов Иван",
+            "help_message": ""
+          },
+          "email": {
+            "input": "test_data_@test.ru",
+            "help_message": ""
+          },
+          "username": {
+            "input": "test_data_",
+            "help_message": ""
+          },
+          "phone": {
+            "input": "11111111112",
+            "help_message": ""
+          },
+          "inn": {
+            "input": "500100732259",
+            "help_message": ""
+          },
+                  "validation": "True"
+
+        }
+
+
+  ],
+  "step2": [
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": "Это поле обязательно."
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Физическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": "Это поле обязательно."
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": "МФЦ"
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": ""
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": "Государственные и муниципальные органы"
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": ""
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": "Другое"
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": ""
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": "Здравоохранение"
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": ""
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": "Образование"
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": ""
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Физическое лицо"
+      },
+      "data":
+      {
+        "region": "",
+        "activity": "Нотариальная деятельность"
+      },
+      "helpblock":
+      {
+        "region": "Это поле обязательно.",
+        "activity": ""
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "Чувашская",
+        "activity": ""
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": "Это поле обязательно."
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Физическое лицо"
+      },
+      "data":
+      {
+        "region": "Республика Крым",
+        "activity": ""
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": "Это поле обязательно."
+      },
+      "validation": "False"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "Чувашская",
+        "activity": "МФЦ"
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "validation": "True"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "Вологодская область",
+        "activity": "Образование"
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "validation": "True"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "Камчатский край",
+        "activity": "Здравоохранение"
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "validation": "True"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "Москва",
+        "activity": "Другое"
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "validation": "True"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Юридическое лицо"
+      },
+      "data":
+      {
+        "region": "Пермский край",
+        "activity": "Государственные и муниципальные органы"
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "validation": "True"
+    },
+    {
+      "prepare":
+      {
+          "org_type": "Физическое лицо"
+      },
+      "data":
+      {
+        "region": "Республика Крым",
+        "activity": "Нотариальная деятельность"
+      },
+      "helpblock":
+      {
+        "region": "",
+        "activity": ""
+      },
+      "validation": "True"
+
+    }
+
+  ],
+  "step3": [
+     {
+      "data":
+      {
+        "password1": "",
+        "password2": "",
+        "promocode": "",
+        "agreement": "False",
+        "copy_data": "False"
+      },
+      "helpblock":
+      {
+        "password1": "Придумайте пароль",
+        "password2": "Повторите пароль",
+        "promocode": "",
+        "agreement": "Вы должны принять условия пользовательского соглашения"
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "1",
+        "password2": "1",
+        "promocode": "12",
+        "agreement": "True",
+        "copy_data": "False"
+      },
+      "helpblock":
+      {
+        "password1": "",
+        "password2": "Введённый пароль слишком короткий. Он должен содержать как минимум 8 символов. Введённый пароль состоит только из цифр.",
+        "promocode": "Неверный промокод, проверьте правильность ввода",
+        "agreement": ""
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "12345678",
+        "password2": "12345678",
+        "promocode": "Партнер",
+        "agreement": "True",
+        "copy_data": "True"
+  },
+      "helpblock":
+      {
+        "password1": "",
+        "password2": "Введённый пароль слишком широко распространён. Введённый пароль состоит только из цифр.",
+        "promocode": "",
+        "agreement": ""
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "123456789000",
+        "password2": "123456789000",
+        "promocode": "",
+        "agreement": "True",
+        "copy_data": "True"
+      },
+      "helpblock":
+      {
+        "password1": "",
+        "password2": "Введённый пароль состоит только из цифр.",
+        "promocode": "",
+        "agreement": ""
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "123",
+        "password2": "321",
+        "promocode": "",
+        "agreement": "True",
+        "copy_data": "True"
+   },
+      "helpblock":
+      {
+        "password1": "",
+        "password2": "Пароли не совпадают, пожалуйста, повторите ввод",
+        "promocode": "",
+        "agreement": ""
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "123456789Ff",
+        "password2": "",
+        "promocode": "",
+        "agreement": "True",
+        "copy_data": "True"
+      },
+      "helpblock":
+      {
+        "password1": "",
+        "password2": "Повторите пароль",
+        "promocode": "",
+        "agreement": ""
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "",
+        "password2": "123456789Ff",
+        "promocode": "Партнер",
+        "agreement": "True",
+        "copy_data": "False"
+      },
+      "helpblock":
+      {
+        "password1": "Придумайте пароль",
+        "password2": "",
+        "promocode": "",
+        "agreement": ""
+      },
+      "validation": "False"
+    },
+     {
+      "data":
+      {
+        "password1": "123456789Ff",
+        "password2": "123456789Ff",
+        "promocode": "",
+        "agreement": "True",
+        "copy_data": "True"
+      },
+      "helpblock":
+      {
+        "password1": "",
+        "password2": "",
+        "promocode": "",
+        "agreement": ""
+      },
+      "validation": "True"
+    }
+  ],
+  "check_data":
+  [
+
+    {
+      "org_type": "Юридическое лицо",
+      "full_name": "Иванов Иван",
+      "email": "test_data_@test.ru",
+      "username": "test_data_",
+      "phone": "55555555555",
+      "inn": "0000000000",
+      "region": "Республика Крым",
+      "activity": "Государственные и муниципальные органы",
+      "password1": "123456789Ff",
+      "password2": "123456789Ff",
+      "promocode": "",
+      "copy_data": "True",
+      "agreement": "True"
+    },
+    {
+      "org_type": "Юридическое лицо",
+      "full_name": "Иванов Иван",
+      "email": "test_data_@test.ru",
+      "username": "test_data_",
+      "phone": "11111111111",
+      "inn": "0000000000",
+      "region": "Республика Крым",
+      "activity": "МФЦ",
+      "password1": "123456789Ff",
+      "password2": "123456789Ff",
+      "promocode": "",
+      "copy_data": "True",
+      "agreement": "True"
+    },
+    {
+      "org_type": "Юридическое лицо",
+      "full_name": "Иванов Иван",
+      "email": "test_data_@test.ru",
+      "username": "test_data_",
+      "phone": "22222222222",
+      "inn": "0000000000",
+      "region": "Республика Алтай",
+      "activity": "Образование",
+      "password1": "123456789Ff",
+      "password2": "123456789Ff",
+      "promocode": "",
+      "copy_data": "True",
+      "agreement": "True"
+    },
+    {
+      "org_type": "Юридическое лицо",
+      "full_name": "Иванов Иван",
+      "email": "test_data_@test.ru",
+      "username": "test_data_",
+      "phone": "33333333333",
+      "inn": "0000000000",
+      "region": "Республика Бурятия",
+      "activity": "Здравоохранение",
+      "password1": "123456789Ff",
+      "password2": "123456789Ff",
+      "promocode": "",
+      "copy_data": "True",
+      "agreement": "True"
+    },
+    {
+      "org_type": "Юридическое лицо",
+      "full_name": "Иванов Иван",
+      "email": "test_data_@test.ru",
+      "username": "test_data_",
+      "phone": "44444444444",
+      "inn": "0000000000",
+      "region": "Иркутская область",
+      "activity": "Другое",
+      "password1": "123456789Ff",
+      "password2": "123456789Ff",
+      "promocode": "",
+      "copy_data": "True",
+      "agreement": "True"
+    },
+    {
+      "org_type": "Физическое лицо",
+      "full_name": "Иванов Иван",
+      "email": "test_data_@test.ru",
+      "username": "test_data_",
+      "phone": "55555555555",
+      "inn": "0000000000",
+      "region": "Республика Дагестан",
+      "activity": "Нотариальная деятельность",
+      "password1": "123456789Ff",
+      "password2": "123456789Ff",
+      "promocode": "",
+      "copy_data": "True",
+      "agreement": "True"
+    }
+  ]
+}

@@ -1,0 +1,3358 @@
+{
+  "knowledge": [
+    {
+      "name": "Ввод данных / Общие сведения / Сведения об организации",
+      "skip": true,
+      "link_page": "cabinet/main_wizard/company_details/#step/common",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/90dbefaed2a2469b8d0583970022d007/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1e4216cfd5b64affb0637675613534fa/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8bfa7be7225c436fbd7e8bdbd1f09e96/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3e8543afa42f49728db6ef4f2ad329d8/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7fe91c08407243cda903577a4c00aea8/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/47ce0d22469a46fd92fb621112ba8bc9/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/8bfa7be7225c436fbd7e8bdbd1f09e96/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Цели и способы обработки информации",
+      "link_page": "cabinet/main_wizard/company_details/#step/aims",
+      "type_page": "step_page",
+      "tariff": [
+        "КИИ.СТАНДАРТ",
+        "ПДН.БЮДЖЕТ.ЭКСПЕРТ"
+      ],
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/b17fe11ffda54dffa484698dd68b2b03/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Объекты критической информационной инфраструктуры»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9a538fa8a2e6472d814607de270350e0/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4880071b8dfa4b08b66cefc3c8cbfdda/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ecbdbad3157249a2835c146eabe8dc74/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/fb751265e3a24c779df2906a906b2a63/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2bc2e6cbdf2d426eb494564afa13a471/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/9a538fa8a2e6472d814607de270350e0/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Перечень программных комплексов",
+      "link_page": "cabinet/main_wizard/company_details/#step/softwares",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/0e433d06d37342c39e4ca68672a290f7/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3e51a2436c4845d89ccab130ff60a65c/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/95f304d91bd74e188c249241f7eb0c69/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/48002fef857e44e1bc55d41b5d82b1c5/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c816ded9c87443129d5dcd17fcb0fc4f/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ceb2f2a856b3453bbbd9434500e72895/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/95f304d91bd74e188c249241f7eb0c69/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Общие сведения о системах",
+      "link_page": "cabinet/main_wizard/company_details/#step/common-infosystems",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/6976dccc8a384251b8a862c2aad9784c/",
+        "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения о системах»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/98631e16d9e64b528d81109dfb506581/",
+        "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения о системах»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f107f9c3d6a14a5cb93d2846b30456a2/",
+        "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения об ИСПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/f107f9c3d6a14a5cb93d2846b30456a2/",
+        "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения об ИСПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Бизнес-процессы",
+      "link_page": "cabinet/main_wizard/company_details/#step/business-processes",
+      "type_page": "step_page",
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/f0dc0e5c61b6463e8a84075f5c54074c/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/66c47d95b91b4a0ebca4ac41c8e73a66/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      },
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/1ef33254cd7041f68db77fb185e3d5e4/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f0dc0e5c61b6463e8a84075f5c54074c/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f766345f906c46fab89cec937bdad7f2/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/db612a9d21da46beb2bdbafe49b3307b/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ab50c659847c498ea01a54f071ee5b32/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Бизнес-процессы»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Структура организации",
+      "link_page": "cabinet/main_wizard/company_details/#step/structure",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/4fccf9045d1743f38392a67e7a561f8e/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7140f04d821247ed8c5f9fc3ab02b911/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2554d89e44c641efb71b07d33fccd988/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2a6a611e2ede4bde949b5bd0bea43c32/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/30f8549b788e427b8e10e2c580de1af9/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1a8114a69bb34d7ba45ba0e1c44e2aa7/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Сотрудники организации",
+      "link_page": "cabinet/main_wizard/company_details/#step/employees",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/6506e914d1284d0bb5f9aa5c65c69403/",
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a752e736904c42c6af30ea09e5ceb4df/",
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/63b1b84f3a9649468bb9cf3f6fef0542/",
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/178e2d2da4c441c89031f9534f6536b0/",
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/80209db21a254701b3194cfe204ac32c/",
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/04a6ab447f5845a4aa4f722c492a57ff/",
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/a752e736904c42c6af30ea09e5ceb4df/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Сотрудники организации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Помещения и хранилища",
+      "link_page": "cabinet/main_wizard/company_details/#step/rooms_vaults",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/40bdea8577494d37b5fa66042cd9a595/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/461442e3377e47f69273e6a3307bbef1/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5a669f6d41e34b138bb5cc059a1b3fe4/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/05880d0fae8a43e0a682ccaa80c95691/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6360be9fd0594ee386ec451c0bde316f/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/890aac023b004be1a00a67c873df748a/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/5a669f6d41e34b138bb5cc059a1b3fe4/",
+        "zagolovok_in_knowledge": "6.1.1.8 Шаг 8 «Помещения и хранилища»"
+      }
+    },
+    {
+      "name": "Ввод данных / КИИ / Параметры объектов КИИ",
+      "link_page": "cabinet/main_wizard/critical_category/#step/critical-props",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/59cc05030b364dae937b8905d3072902/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Параметры объектов КИИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e4ffa40513ed41d2942c2a19bae88221/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Параметры объектов КИИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5a36ad80c1744fd59af148d9f05a3279/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Параметры объектов КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / КИИ / Категорирование КИИ",
+      "link_page": "cabinet/main_wizard/critical_category/#step/category_new",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/f99c66c4925b43e390e4be5473a3249a/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Категорирование КИИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/bae8c42dde824b48b7c81a8732d614e0/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Категорирование КИИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/46448e52685d435499912f700bd7d054/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Категорирование КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / КИИ / Параметры документов по КИИ",
+      "link_page": "cabinet/main_wizard/critical_category/#step/docs_params",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/59d9663698bc459d97a7161678812419/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Параметры документов по КИИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e42b36fbb7cd41dfa94295f9882b9127/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Параметры документов по КИИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/18b635f90c914b96b85baee3b0604936/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Параметры документов по КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / КИИ / Актуальные нарушители",
+      "link_page": "cabinet/main_wizard/critical_category/#step/violator",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Руководство организации",
+      "link_page": "cabinet/main_wizard/responsibles/#step/company_management",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/776b21b14fde4377822a76c06ae3b8d0/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Руководство организации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/768b5d4c564c4c46a62eedd8d85f1d96/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Руководство организации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/87c78927e589436896bc3166dec7d745/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Руководство организации»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9bc6c2b1e0fb47efbdc304c06cf7870f/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Руководство организации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e4626d0be4454387ac3da5bd33aa0eaf/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Руководство организации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d3ac74b2be134fac9fa032243e902dda/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Руководство организации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/87c78927e589436896bc3166dec7d745/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Руководство организации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные /  Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности",
+      "link_page": "cabinet/main_wizard/responsibles/#step/resp_planning_control",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a546a69f6764405c96d3be0d9d5835cf/",
+        "zagolovok_in_knowledge": "6.1.5.6 Шаг 6 «Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные /  Ответственный за управление (администрирование) системой защиты информации (подсистемой безопасности)",
+      "link_page": "cabinet/main_wizard/responsibles/#step/resp_administration_protection_system",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/17ecf59563024479be6a5fe808565cdb/",
+        "zagolovok_in_knowledge": "6.1.5.7 Шаг 7 «Ответственный за управление (администрирование) системой защиты информации (подсистемой безопасности)»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные /  Ответственные за выявление компьютерных инцидентов и реагирование на них",
+      "link_page": "cabinet/main_wizard/responsibles/#step/incidents",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5f850be019b24f3d8333a86316903b0e/",
+        "zagolovok_in_knowledge": "6.1.5.8 Шаг 8 «Ответственные за выявление компьютерных инцидентов и реагирование на них»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/567236aac2c14d8aab7cdb5094d4a2fc/",
+        "zagolovok_in_knowledge": "6.1.3.6 Шаг 6 Ответственные за выявление компьютерных инцидентов и реагирование на них"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a47b9e1dad4b4e5ca832fbcc6cdee95b/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Ответственные за выявление компьютерных инцидентов и реагирование на них»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3a79726f7da34f6c9dfc1a12b033f3de/",
+        "zagolovok_in_knowledge": "6.1.3.7 Шаг 7 «Ответственные за выявление компьютерных инцидентов»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/23c38c6e135a4e3faa222888dc91be2b/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Ответственные за выявление компьютерных инцидентов и реагирование на них»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/567236aac2c14d8aab7cdb5094d4a2fc/",
+        "zagolovok_in_knowledge": "6.1.3.6 Шаг 6 «Ответственные за выявление компьютерных инцидентов и реагирование на них»"
+      }
+    },
+    {
+      "name": "Ввод данных / ГИС / Характеристики ПК, входящих в состав ГИС",
+      "link_page": "cabinet/main_wizard/gis/#step/softwares",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a67c888a75274ad3a6635bbf8f4528ba/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ГИС»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9d010f61de434800bd1737b74813a8a8/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ГИС»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ab209930f0944a49af842906b3d897c2/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ГИС»"
+      }
+    },
+    {
+      "name": "Ввод данных / ГИС / Перечень помещений с обработкой информации",
+      "link_page": "cabinet/main_wizard/gis/#step/room-access",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e0ba24dd961547de81a83a01b4ac117a/",
+        "zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Перечень помещений с обработкой информации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ccebdf6a76654dc38d6312f71fe1da43/",
+        "zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Перечень помещений с обработкой информации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/bb8d56d12840450b8097f74ecd353585/",
+        "zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Перечень помещений с обработкой информации»"
+      }
+    },
+    {
+      "name": "Ввод данных / ГИС / Перечень лиц, допущенных к обработке информации в ГИС",
+      "link_page": "cabinet/main_wizard/gis/#step/person-access",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/074d15932854493fa5151fa5d0fcbfd5/",
+        "zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень лиц, допущенных к обработке информации в ГИС»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3fe366d3cb5048f38da918e22d381b90/",
+        "zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень лиц, допущенных к обработке информации в ГИС»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1768ae091df848fb9ed924c6074faee9/",
+        "zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень лиц, допущенных к обработке информации в ГИС»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Характеристики ПК, входящих в состав ИСПДн",
+      "link_page": "cabinet/main_wizard/personal_data/#step/softwares",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8de045b19c0044788d2b6db16b495557/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Характеристики ПК, входящих в состав ИСПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5849b1a887964e1686d0ea629a915618/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ИСПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9fc908e7cb094ae7beae63e8aa82d36e/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ИСПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/73762c78389540aab2a367225c309698/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Характеристики ПК, входящих в состав ИСПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/5849b1a887964e1686d0ea629a915618/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ИСПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Особенности неавтоматизированной обработки ПДн",
+      "link_page": "cabinet/main_wizard/personal_data/#step/unautomated-processing",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/56905b619e7240c7a44265354e739d59/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Особенности неавтоматизированной обработки ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6666029910ab44c7acfdc76dead9b7aa/",
+        "zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Особенности неавтоматизированной обработки ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3bf82863f8fa403788789802f92735df/",
+        "zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Особенности неавтоматизированной обработки ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0af20333a2564f18a69c23f81ae2bd33/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Особенности неавтоматизированной обработки ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/6666029910ab44c7acfdc76dead9b7aa/",
+        "zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Особенности неавтоматизированной обработки ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Перечень помещений с обработкой ПДн",
+      "link_page": "cabinet/main_wizard/personal_data/#step/room-access",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1d8e4ef89232429b9474aedbce1c56fb/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Перечень помещений с обработкой ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7281335fc7064e55bccfc44de7710012/",
+        "zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень помещений с обработкой ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3732fdccef824a98a2786723099928a4/",
+        "zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень помещений с обработкой ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e3806a505d5547f8bc9baded4175ca15/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Перечень помещений с обработкой ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/7281335fc7064e55bccfc44de7710012/",
+        "zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень помещений с обработкой ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Перечень лиц, допущенных к обработке ПДн",
+      "link_page": "cabinet/main_wizard/personal_data/#step/person-access",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/920bd2d172ba414d87a568f8a2a9be26/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Перечень лиц, допущенных к обработке ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b9e482e9d3a046b6921013499c910a3f/",
+        "zagolovok_in_knowledge": "6.1.2.4 Шаг 4 «Перечень лиц, допущенных к обработке ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9b7b34d7ff9e4fdd9cab9123331fb490/",
+        "zagolovok_in_knowledge": "6.1.2.4 Шаг 4 «Перечень лиц, допущенных к обработке ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a9af66d4c43342be83f794a35a914008/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Перечень лиц, допущенных к обработке ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Обезличивание ПДн",
+      "link_page": "cabinet/main_wizard/personal_data/#step/measures",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/71bb1843928b4012b50d5862c8522d72/",
+        "zagolovok_in_knowledge": "6.1.3.5 Шаг 5 «Обезличивание ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9738e060f50b41e19b441e1d781d11ca/",
+        "zagolovok_in_knowledge": "6.1.2.5 Шаг 5 «Обезличивание ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/684e2abab113456e8b80cd30341c774e/",
+        "zagolovok_in_knowledge": "6.1.2.5 Шаг 5 «Обезличивание ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/df3fc241793a4e3cb928b1ab0d9a2aa5/",
+        "zagolovok_in_knowledge": "6.1.3.5 Шаг 5 «Обезличивание ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/9738e060f50b41e19b441e1d781d11ca/",
+        "zagolovok_in_knowledge": "6.1.2.5 Шаг 5 «Обезличивание ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Особенности обработки ПДн",
+      "link_page": "cabinet/main_wizard/personal_data/#step/processing",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1f2bc4b8ea2c43be8c5c528210aaa42e/",
+        "zagolovok_in_knowledge": "6.1.3.6 Шаг 6 «Особенности обработки ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/366bedec71b0406d807956b70af8a8f1/",
+        "zagolovok_in_knowledge": "6.1.2.6 Шаг 6 «Особенности обработки ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7a64f759bf2d42f49f36387487b4e13f/",
+        "zagolovok_in_knowledge": "6.1.2.6 Шаг 6 «Особенности обработки ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b85560b892a94f648b0fc05c4db98ccb/",
+        "zagolovok_in_knowledge": "6.1.3.6 Шаг 6 «Особенности обработки ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/366bedec71b0406d807956b70af8a8f1/",
+        "zagolovok_in_knowledge": "6.1.2.6 Шаг 6 «Особенности обработки ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Оценка вреда",
+      "link_page": "cabinet/main_wizard/personal_data/#step/estimation-damage",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/98939d0348054b3c878a4bb59671de09/",
+        "zagolovok_in_knowledge": "6.1.3.7 Шаг 7 «Оценка вреда»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3108b356b1de43ecb1790cfb3bc563d0/",
+        "zagolovok_in_knowledge": "6.1.2.7 Шаг 7 «Оценка вреда»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3fcc97de2c8f46ab80d8a74482d91f24/",
+        "zagolovok_in_knowledge": "6.1.2.7 Шаг 7 «Оценка вреда»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c3f0a086e0a6433aa523f161f603532c/",
+        "zagolovok_in_knowledge": "6.1.3.7 Шаг 7 «Оценка вреда»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/3108b356b1de43ecb1790cfb3bc563d0/",
+        "zagolovok_in_knowledge": "6.1.2.7 Шаг 7 «Оценка вреда»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Перечень помещений, в которых установлены видеокамеры",
+      "link_page": "cabinet/main_wizard/personal_data/#step/rooms-video",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/09c5ef18d84f4095800c92e6b664ae86/",
+        "zagolovok_in_knowledge": "6.1.3.8 Шаг 8 «Перечень помещений, в которых установлены видеокамеры»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/bf29d0af574e49238479ab191495fd81/",
+        "zagolovok_in_knowledge": "6.1.2.8 Шаг 8 «Перечень помещений, в которых установлены видеокамеры»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4cddc3d1570346f189251f6df3b7d16c/",
+        "zagolovok_in_knowledge": "6.1.2.8 Шаг 8 «Перечень помещений, в которых установлены видеокамеры»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/bf29d0af574e49238479ab191495fd81/",
+        "zagolovok_in_knowledge": "6.1.2.8 Шаг 8 «Перечень помещений, в которых установлены видеокамеры»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Перечень должностей, имеющих доступ к системе видеонаблюдения",
+      "link_page": "cabinet/main_wizard/personal_data/#step/video-control-posts",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/226928a3551542eabb724c8404a4fc95/",
+        "zagolovok_in_knowledge": "6.1.3.9 Шаг 9 «Перечень должностей, имеющих доступ к системе видеонаблюдения»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8636f4b5c9544ed790eb9a268ca1cdf0/",
+        "zagolovok_in_knowledge": "6.1.2.9 Шаг 9 «Перечень должностей, имеющих доступ к системе видеонаблюдения»"
+      }
+    },
+    {
+      "name": "Ввод данных / ПДН / Использование официального сайта",
+      "link_page": "cabinet/main_wizard/personal_data/#step/official-website",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0f4229078b964dad8e97042e547c4de2/",
+        "zagolovok_in_knowledge": "6.1.3.10 Шаг 10 «Использование официального сайта»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/adc94362ca484477b21f8766bf662d2a/",
+        "zagolovok_in_knowledge": "6.1.2.10 Шаг 10 «Использование официального сайта»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7dc20e91014f4e319c3ed3cb83299c88/",
+        "zagolovok_in_knowledge": "6.1.2.10 Шаг 10 «Использование официального сайта»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a6f7fae242ca4ab6a4935d0f020b936e/",
+        "zagolovok_in_knowledge": "6.1.3.10 «Использование официального сайта»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/adc94362ca484477b21f8766bf662d2a/",
+        "zagolovok_in_knowledge": "6.1.2.10 Шаг 10 «Использование официального сайта»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Ответственный за организацию обработки ПДн",
+      "link_page": "cabinet/main_wizard/responsibles/#step/pdn_processing",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4c19e8cfdb6a447cb03a9dd138eabcb6/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Ответственный за организацию обработки ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/07536ab9eaf945ba8a9ca18716cd9681/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Ответственный за организацию обработки ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c64a2a139be84efea17d795fca826682/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Ответственный за организацию обработки ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/577f7bed3e394ccea3f1bb077ad10d91/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Ответственный за организацию обработки ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/07536ab9eaf945ba8a9ca18716cd9681/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Ответственный за организацию обработки ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Ответственный за обеспечение безопасности ПДн и за защиту информации",
+      "link_page": "cabinet/main_wizard/responsibles/#step/resp_security_protection",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/85867cd4f09c4864b99cf420b112cbe8/",
+        "zagolovok_in_knowledge": "6.1.5.3 Шаг 3 «Ответственный за обеспечение безопасности ПДн и за защиту информации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/96cbe6a996bc4154941d4b7005aa0196/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Ответственный за обеспечение безопасности ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/38da98f7bb1e42e68150d4988a76ee92/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Ответственный за обеспечение безопасности ПДн»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b883d803c80e47a3af01be5e125b5315/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Ответственный за защиту информации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/06148196fe1a41ec976d93df3a974c73/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Ответственный за обеспечение безопасности ПДн и за защиту информации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/96cbe6a996bc4154941d4b7005aa0196/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Ответственный за обеспечение безопасности ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Комиссия по классификации ИС / определения уровня защищённости ПДн в ИС",
+      "link_page": "cabinet/main_wizard/responsibles/#step/commission_classification",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5015e63e3a3c4a84a0898bfd88e1951e/",
+        "zagolovok_in_knowledge": "6.1.5.4 Шаг 4 «Комиссия по классификации ИС / определения уровня защищённости ПДн в ИС»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/661c3cdb808843d9bf70344d387e58f8/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Комиссия для определения уровня защищенности ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/65b8519188294e5a9db806e8b0220d5a/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Комиссия для определения уровня защищенности ПДн»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6916ea1ea28a4ef0bb0d247fce1c8fc5/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Комиссия по классификации ИС»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/253d6fecc405450d86fa111e213c7fb5/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Комиссия по классификации ИС / определения уровня защищённости ПДн в ИС»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/661c3cdb808843d9bf70344d387e58f8/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Комиссия для определения уровня защищенности ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Комиссия по уничтожению (стиранию) информации",
+      "link_page": "cabinet/main_wizard/responsibles/#step/commission_destruction",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d65eb36aaaee406ebe13fc0694257323/",
+        "zagolovok_in_knowledge": "6.1.5.5 Шаг 5 «Комиссия по уничтожению (стиранию) информации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cd5c7e1d97eb44d7bd02314900871070/",
+        "zagolovok_in_knowledge": "6.1.3.5 Шаг 5 «Комиссия по уничтожению (стиранию) ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b7f2467f0255488fba0d7d5adef6e5b5/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Комиссия по уничтожению (стиранию) ПДн»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7aa561c50a5f4bdbabec07d7260be754/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Комиссия по уничтожению (стиранию) информации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1f21f7dc1169432db6fbb4bb2b1a69d3/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Комиссия по уничтожению (стиранию) информации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/cd5c7e1d97eb44d7bd02314900871070/",
+        "zagolovok_in_knowledge": "6.1.3.5 Шаг 5 «Комиссия по уничтожению (стиранию) ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем",
+      "link_page": "cabinet/main_wizard/responsibles/#step/config_employees",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b275d160508049329d8a86f6f76656f1/",
+        "zagolovok_in_knowledge": "6.1.5.9 Шаг 9 «Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/85f93de9a7ff4512b0a7a4d776c434e6/",
+        "zagolovok_in_knowledge": "6.1.3.7 Шаг 7 Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6a2f29b4d751430b857be79f5e2d5afd/",
+        "zagolovok_in_knowledge": "6.1.4.9 Шаг 9 «Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a8a26a5e997e4fa097f794b8adc274f4/",
+        "zagolovok_in_knowledge": "6.1.3.8 Шаг 8 «Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4c4b377af70f45d7bb366ea458012638/",
+        "zagolovok_in_knowledge": "6.1.4.9 Шаг 9 «Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/85f93de9a7ff4512b0a7a4d776c434e6/",
+        "zagolovok_in_knowledge": "6.1.3.7 Шаг 7 «Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности",
+      "link_page": "cabinet/main_wizard/responsibles/#step/log_employees",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c2a5ee54552349459467da16d843a965/",
+        "zagolovok_in_knowledge": "6.1.5.10 Шаг 10 «Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5fcbbdd6ca434656a98c82c66ea6995d/",
+        "zagolovok_in_knowledge": "6.1.3.8 Шаг 8 Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5bb2763de5bc4f9ab983ad95c46210b6/",
+        "zagolovok_in_knowledge": "6.1.4.10 Шаг 10 «Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4c55499991b94430a0507a52a0eeb44b/",
+        "zagolovok_in_knowledge": "6.1.4.10 Шаг 10 «Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/5fcbbdd6ca434656a98c82c66ea6995d/",
+        "zagolovok_in_knowledge": "6.1.3.8 Шаг 8 «Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Комиссия по категорированию объектов КИИ",
+      "link_page": "cabinet/main_wizard/responsibles/#step/category_commission",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/d75b450c85a246f4a7b9dbfef7a9475a/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Комиссия по категорированию объектов КИИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/32332a97c24c4fbebcfcae8fad5a183e/",
+        "zagolovok_in_knowledge": "6.1.5.11 Шаг 11 «Комиссия по категорированию объектов КИИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3f5c34e3232e48e9a66e2664952fbcbc/",
+        "zagolovok_in_knowledge": "6.1.4.11 Шаг 11 «Комиссия по категорированию объектов КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Лица, осуществляющие взаимодействие с ФСТЭК России",
+      "link_page": "cabinet/main_wizard/responsibles/#step/resp_fstec_interaction",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2bda26707e894d4bb35f9bf55a0ebcc6/",
+        "zagolovok_in_knowledge": "6.1.5.12 Шаг 12 «Лица, осуществляющие взаимодействие с ФСТЭК России»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f1420645cba4486ab1a762d8b53393c1/",
+        "zagolovok_in_knowledge": "6.1.4.12 Шаг 12 «Лица, осуществляющие взаимодействие с ФСТЭК России»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Ответственные за обеспечение безопасности КИИ",
+      "link_page": "cabinet/main_wizard/responsibles/#step/category-responsible",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/6d4e76e6bac148a49000341fd7fa0b74/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Ответственный за обеспечение безопасности значимых объектов КИИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/55a8c17822814cb995716e3f990f0d21/",
+        "zagolovok_in_knowledge": "6.1.5.13 Шаг 13 «Ответственные за обеспечение безопасности КИИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8380321630c947078e0b87aa3fa657c0/",
+        "zagolovok_in_knowledge": "6.1.4.13 Шаг 13 «Ответственные за обеспечение безопасности КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Ответственный пользователь криптосредств",
+      "link_page": "cabinet/main_wizard/responsibles/#step/crypto-responsible",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8aa39454ffbb4c3ea9db9a36a7c00f48/",
+        "zagolovok_in_knowledge": "6.1.5.14 Шаг 14 «Ответственный пользователь криптосредств»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f9800394ae9f4d6781a6263bc3999c03/",
+        "zagolovok_in_knowledge": "6.1.3.9 Шаг 9 «Ответственный пользователь криптосредств»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5e117b05d4a04b01bf7f263a69f04174/",
+        "zagolovok_in_knowledge": "6.1.4.14 Шаг 14 «Ответственный пользователь криптосредств»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/452462e4939e4ac3859c395392e3ff71/",
+        "zagolovok_in_knowledge": "6.1.3.9 Шаг 9 «Ответственный пользователь криптосредств»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/f9800394ae9f4d6781a6263bc3999c03/",
+        "zagolovok_in_knowledge": "6.1.3.9 Шаг 9 «Ответственный пользователь криптосредств»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Ответственный за организацию и контроль за работой системы видеонаблюдения",
+      "link_page": "cabinet/main_wizard/responsibles/#step/video_control",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ace938bca3074807b05053454af14734/",
+        "zagolovok_in_knowledge": "6.1.5.15 Шаг 15 «Ответственный за организацию и контроль за работой системы видеонаблюдения»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3dc5e22d4fd94ea8ad4926af06d55a7e/",
+        "zagolovok_in_knowledge": "6.1.4.15 Шаг 15 «Ответственный за организацию и контроль за работой системы видеонаблюдения»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/eef8f08d9e164346bdd406c28e992771/",
+        "zagolovok_in_knowledge": "6.1.3.10 Шаг 10 «Ответственный за организацию и контроль за работой системы видеонаблюдения»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Информационная инфраструктура",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/inform-infrastructure",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/b2d06f98a9f7439fbcf02c85ac33ddf5/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7f9d85f6d2c24a4c894427889e6b8de5/",
+        "zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Информационная инфраструктура»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/51590df079804de59798e644b5b1545c/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9849f6d88c214623a76e3ed2b4fd44ef/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Информационная инфраструктура»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0b62ea1cc1d64f9f96508f61a9235647/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/69d03fbd26a84453b2311f03cadb3ee0/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Информационная инфраструктура»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/51590df079804de59798e644b5b1545c/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Сетевое взаимодействие",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/network_communication",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/711a26b551634ed6ad6c5fd731482812/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/878a566a045342f99cfb33eaacd88073/",
+        "zagolovok_in_knowledge": "6.1.6.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7f70182db70f4b1e9f4823cb3ac87328/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/bcbde8d4d34a4852a300b384ef5c4f59/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/db9eec1daf0142199caa6dc7abba14a9/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/eb01dab6c8ad41b38c56b938e2e78a33/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/7f70182db70f4b1e9f4823cb3ac87328/",
+        "zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Сетевое взаимодействие»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Реестр средств защиты информации",
+      "skip": true,
+      "link_page": "cabinet/main_wizard/information_technologies/#step/all-protection-tools-expert",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/7e0d0709652249f3afbeeedb33abf822/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Реестр средств защиты информации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/796fbcbf515648ac8d1fff6af0d008f0/",
+        "zagolovok_in_knowledge": "6.1.6.3 Шаг 3 «Реестр средств защиты информации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7f70182db70f4b1e9f4823cb3ac87328/",
+        "zagolovok_in_knowledge": "!!!!6.1.4.2 Шаг 2 «Сетевое взаимодействие»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/15a91ea3d96441d2a3aab5a4a080eeaf/",
+        "zagolovok_in_knowledge": "6.1.5.3 Шаг 3 «Реестр средств защиты информации»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/92809a7c790647fe8d8d28650ee72a27/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Реестр средств защиты информации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f686d1a410fe4ba698e87f9621daea84/",
+        "zagolovok_in_knowledge": "6.1.5.3 Шаг 3 «Реестр средств защиты информации»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/964a379ecb0e4dcd8f4adec3a1c1ea91/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Реестр средств защиты информации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Используемые технологии",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/technologies",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/707d5f0ffc4b4652b96606f86eefa038/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Используемые технологии»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9445468f245f4395b7023242a23e45cb/",
+        "zagolovok_in_knowledge": "6.1.6.4 Шаг 4 «Используемые технологии»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/626d75eda3314995b32053bee22f9157/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Используемые технологии»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a1bf56b85a324c0d9c0d36709467fef4/",
+        "zagolovok_in_knowledge": "6.1.5.4 Шаг 4 «Используемые технологии»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c827fb4294be49818d35a920e850af30/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Используемые технологии»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1dbafea4b22642cab95ce68c5e022f2b/",
+        "zagolovok_in_knowledge": "6.1.5.4 Шаг 4 «Используемые технологии»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/626d75eda3314995b32053bee22f9157/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Используемые технологии»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Облачные услуги",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/cloud-services",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Характеристики информационной инфраструктуры",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/initial-protection",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/059dfe26552d43169b2c50e6d36f1b79/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a876ae69a85b4004954f51e1fc720b7b/",
+        "zagolovok_in_knowledge": "6.1.6.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0b73dace431d472aba02295c636c4710/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/82ac9f8cae9e413d8336d1cedfdb27c6/",
+        "zagolovok_in_knowledge": "6.1.5.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d2eb884014894e858669f318a95d9d43/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5c6cfd966d794d1cacf525b41580a4bb/",
+        "zagolovok_in_knowledge": "6.1.5.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/0b73dace431d472aba02295c636c4710/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Установка СЗИ",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/protection-expert",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/ad13ed7370264f6c8d2345d90363782d/",
+        "zagolovok_in_knowledge": "6.1.4.6 Шаг 6 «Установка СЗИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8b50b9b90f7843f4bfe783595caaec56/",
+        "zagolovok_in_knowledge": "6.1.6.6 Шаг 6 «Установка СЗИ»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7f3b3d5b046e4eb6a27cd4a598423259/",
+        "zagolovok_in_knowledge": "6.1.4.6 Шаг 6 «Установка СЗИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/09fe88bc501b46a8982d074867c79d69/",
+        "zagolovok_in_knowledge": "6.1.5.6 Шаг 6 «Установка СЗИ»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/656a52a456c14bed9374458aeacef692/",
+        "zagolovok_in_knowledge": "6.1.4.6 Шаг 6 «Установка СЗИ»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c7094077d08e4e86b0991128d5cda343/",
+        "zagolovok_in_knowledge": "6.1.5.6 Шаг 6 «Установка СЗИ»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/7f3b3d5b046e4eb6a27cd4a598423259/",
+        "zagolovok_in_knowledge": "6.1.4.6 Шаг 6 «Установка СЗИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Информационные потоки",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/dataflow",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e91776fe2f69490da41e8afa9e00f7ff/",
+        "zagolovok_in_knowledge": "6.1.6.7 Шаг 7 «Информационные потоки»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7094a5fbbc1a43d2913af5bd2a3aa170/",
+        "zagolovok_in_knowledge": "6.1.4.7 Шаг 7 «Информационные потоки»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6d1201de8e034a988f97c1640857a7e3/",
+        "zagolovok_in_knowledge": "6.1.5.7 Шаг 7 «Информационные потоки»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9a35a093583c437eaeb41c56ee9bc8f6/",
+        "zagolovok_in_knowledge": "6.1.4.7 Шаг 7 «Информационные потоки»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/18cb9ebecbdb4033b288b2935e5191d5/",
+        "zagolovok_in_knowledge": "6.1.5.7 Шаг 7 «Информационные потоки»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/7094a5fbbc1a43d2913af5bd2a3aa170/",
+        "zagolovok_in_knowledge": "6.1.4.7 Шаг 7 «Информационные потоки»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Меры по обеспечению безопасности объекта КИИ",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/security-measures",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/4d5378f28b0c4bbeac735eb8c4ada2ef/",
+        "zagolovok_in_knowledge": "6.1.4.7 Шаг 7 «Меры по обеспечению безопасности объекта КИИ»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9f72ecaedb42456eaa4fb5e4c37ff4b4/",
+        "zagolovok_in_knowledge": "6.1.6.8 Шаг 8 «Меры по обеспечению безопасности объекта КИИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c437e9ae3a374e34958d450334e8c89f/",
+        "zagolovok_in_knowledge": "6.1.5.8 Шаг 8 «Меры по обеспечению безопасности объекта КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / Информационные технологии / Принятые меры",
+      "link_page": "cabinet/main_wizard/information_technologies/#step/arrangements",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/4c7a653896fb4edc8001bba8be8958cb/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Принятые меры»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b89389d0e6304c87ab66f478087ec289/",
+        "zagolovok_in_knowledge": "6.1.6.9 Шаг 9 «Принятые меры»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/91b73ecf0c4b459c9708654ded92bff6/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Принятые меры»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2a4e4988bf3649d0b2fed8e27d7e8991/",
+        "zagolovok_in_knowledge": "6.1.5.9 Шаг 9 «Принятые меры»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/70fb56c512a748c5aad891c7afdf650b/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Принятые меры»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ce4a7166ac1748f8b41c5d0f9e5d4f01/",
+        "zagolovok_in_knowledge": "6.1.5.8 Шаг 8 «Принятые меры»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/91b73ecf0c4b459c9708654ded92bff6/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Принятые меры»"
+      }
+    },
+    {
+      "name": "Ввод данных / Эксплуатация криптосредств / Перечень лиц, допущенных к работе с криптосредствами",
+      "link_page": "cabinet/main_wizard/personal_data_crypto/#step/crypto-access",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d3f2dc241789472997bf4fe973c7ccba/",
+        "zagolovok_in_knowledge": "6.1.7.1 Шаг 1 «Перечень лиц, допущенных к работе с криптосредствами»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/085696abc41f4e23804c51533f3f7d28/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Перечень лиц, допущенных к работе с криптосредствами»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/690519f4c20342d8a65d54ff1825c0c6/",
+        "zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Перечень лиц, допущенных к работе с криптосредствами»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c0dd05f7723d414aae23f6be41ee84f9/",
+        "zagolovok_in_knowledge": "6.1.7.1 Шаг 1 «Перечень лиц, допущенных к работе с криптосредствами»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a3e5d7fb786a480c8b227371b101089e/",
+        "zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Перечень лиц, допущенных к работе с криптосредствами»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/085696abc41f4e23804c51533f3f7d28/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Перечень лиц, допущенных к работе с криптосредствами»"
+      }
+    },
+    {
+      "name": "Ввод данных / Эксплуатация криптосредств / Перечень помещений, в которых размещены криптосредства",
+      "link_page": "cabinet/main_wizard/personal_data_crypto/#step/crypto-rooms/",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/60fcd91dcd5e4e51b0cab62cb38a8b27/",
+        "zagolovok_in_knowledge": "6.1.7.2 Шаг 2 «Перечень помещений, в которых размещены криптосредства»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1a23913501a8486f8d1ae4b65680695a/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Перечень помещений, в которых размещены криптосредства»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/02aae3a2cb624ad58902025fe68691a7/",
+        "zagolovok_in_knowledge": "6.1.6.2 Шаг 2 «Перечень помещений, в которых размещены криптосредства»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a90b9adce7204a049913b6a22c7c3bac/",
+        "zagolovok_in_knowledge": "6.1.7.2 Шаг 2 «Перечень помещений, в которых размещены криптосредства»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/340d498888f245c8a95dce099c9d979c/",
+        "zagolovok_in_knowledge": "6.1.6.2 Шаг 2 «Перечень помещений, в которых размещены криптосредства»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/1a23913501a8486f8d1ae4b65680695a/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Перечень помещений, в которых размещены криптосредства»"
+      }
+    },
+    {
+      "name": "Ввод данных / Дополнительно / Сортировка НПА для ГИС",
+      "link_page": "cabinet/main_wizard/npa_sorting/#step/npa-sorting-gis",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e8a4016ff6aa4d598b51e7335558444f/",
+        "zagolovok_in_knowledge": "6.1.8.1 Шаг 1 «Сортировка НПА для ГИС»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d6e74e6d8bc049348f2b7bacffe3b116/",
+        "zagolovok_in_knowledge": "6.1.8.1 Шаг 1 «Сортировка НПА для ГИС»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1a1923fbc1bd4fe0a434af238c684573/",
+        "zagolovok_in_knowledge": "6.1.7.1 Шаг 1 «Сортировка НПА для ГИС»"
+      }
+    },
+    {
+      "name": "Ввод данных / Дополнительно / Сортировка НПА для ПДн",
+      "link_page": "cabinet/main_wizard/npa_sorting/#step/npa-sorting-pdn",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c423e492247c45468e7c9c5e9adaac87/",
+        "zagolovok_in_knowledge": "6.1.8.2 Шаг 2 «Сортировка НПА для ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ec1c6fa3fe29402ab05f55600234b872/",
+        "zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Сортировка НПА для ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c2f3f8aca8ff462a958ab57c0ea6ecd4/",
+        "zagolovok_in_knowledge": "6.1.7.1 Шаг 1 «Сортировка НПА для ПДн»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/fa0095140d044554b477483529c21c00/",
+        "zagolovok_in_knowledge": "6.1.7.2 Шаг 2 «Сортировка НПА для ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/ec1c6fa3fe29402ab05f55600234b872/",
+        "zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Сортировка НПА для ПДн»"
+      }
+    },
+    {
+      "name": "Ввод данных / Дополнительно / Оценка последствий от нарушения свойств безопасности",
+      "link_page": "cabinet/main_wizard/npa_sorting/#step/characteristics",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/7b47cfad3b6347279c4a904f0ab361bc/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Оценка последствий от нарушений свойств безопасности»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7daa7536de904f638e5d319ca501d39d/",
+        "zagolovok_in_knowledge": "6.1.8.3 Шаг 3 «Оценка последствий от нарушения свойств безопасности»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/43a953d2fce04b5ea86686c4de3f5a5c/",
+        "zagolovok_in_knowledge": "6.1.6.2 Шаг 2 «Оценка последствий от нарушения свойств безопасности»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/74afe10a67b843579e44a8ac6f498423/",
+        "zagolovok_in_knowledge": "6.1.7.2 Шаг 2 «Оценка последствий от нарушения свойств безопасности»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1b32ebe9e9a04a18a45e2ac53c98795e/",
+        "zagolovok_in_knowledge": "6.1.8.2 Шаг 2 «Оценка последствий от нарушения свойств безопасности»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/35de81e6a5ee41f1927d3041d039d68d/",
+        "zagolovok_in_knowledge": "6.1.7.3 Шаг 3 «Оценка последствий от нарушения свойств безопасности»"
+      }
+    },
+    {
+      "name": "Ввод данных / Дополнительно / Настройки модели угроз",
+      "link_page": "cabinet/main_wizard/npa_sorting/#step/setting_measures",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/97cd7bfe9c2d4d31aa1aa18d8de51a2a/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Настройка модели угроз»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/97721e74558e4e8fbf525c9b3d2ce4ca/",
+        "zagolovok_in_knowledge": "6.1.8.4 Шаг 4 «Настройки модели угроз»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6861a0c5627a49e59838633fa63f4e97/",
+        "zagolovok_in_knowledge": "6.1.6.3 Шаг 3 «Настройки модели угроз»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d0bf61b5c8564e8c8f802e0f7b370834/",
+        "zagolovok_in_knowledge": "6.1.7.3 Шаг 3 «Настройки модели угроз»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e29ecdd896814851b1999cfa62f72da6/",
+        "zagolovok_in_knowledge": "6.1.8.3 Шаг 3 «Настройки модели угроз»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5247058c03974b73b4587617f9157081/",
+        "zagolovok_in_knowledge": "6.1.7.4 Шаг 4 «Настройки модели угроз»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/6861a0c5627a49e59838633fa63f4e97/",
+        "zagolovok_in_knowledge": "6.1.6.3 Шаг 3 «Настройки модели угроз»"
+      }
+    },
+    {
+      "name": "Ввод данных / Дополнительно / Настройки технического задания",
+      "link_page": "cabinet/main_wizard/npa_sorting/#step/agreement",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/09413c770c6a4fa097181b185f08cb36/",
+        "zagolovok_in_knowledge": "6.1.8.5 Шаг 5 «Настройки технического задания»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/57452b342824455a8e9fc8adc7823979/",
+        "zagolovok_in_knowledge": "6.1.6.4 Шаг 4 «Настройки технического задания»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0287b5e1942148f0a858b1096f2eaba8/",
+        "zagolovok_in_knowledge": "6.1.7.4 Шаг 4 «Настройки технического задания»"
+      }
+    },
+    {
+      "name": "Документы / Настройка оформления",
+      "link_page": "cabinet/dockinds/",
+      "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/1ec35d4cbf4e474ab772e31eebdbe48a/",
+        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5cac9e069a55465da203707321740121/",
+        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/03a2db2410e244b88cb987173385fb01/",
+        "zagolovok_in_knowledge": "6.2.1 Настройка оформления для приказов, распоряжений, постановлений"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/31abe82482d94979822eb21e226de759/",
+        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8f0949aa5b7440789c92bfa631d6c98f/",
+        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5fcb7185767f466ea3f7f7e801f0697b/",
+        "zagolovok_in_knowledge": "6.2 Ярлык Настройка оформления"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/699fe309e07042a7826e3525c4bc0edf/",
+        "zagolovok_in_knowledge": "6.2 Ярлык Настройка оформления"
+      }
+    },
+    {
+      "name": "Документы / Портфель документов",
+      "link_page": "cabinet/docs/briefcase/",
+      "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/569314d2328a45569a1464bb2a0dc0b4/",
+        "zagolovok_in_knowledge": "6.3 Ярлык Портфель документов"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/36bc8178fd1f46978f6544a3011f380a/",
+        "zagolovok_in_knowledge": "6.3 Портфель документов"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4fb9300371a3461e8bd9303bf93272dc/",
+        "zagolovok_in_knowledge": "6.3 Ярлык Портфель документов"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3e8f2768bfc84923b14cc851f4330f6c/",
+        "zagolovok_in_knowledge": "6.3 Ярлык Портфель документов"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2c9c16fd3c6248098bc3696944473691/",
+        "zagolovok_in_knowledge": "6.3 Ярлык Портфель документов"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8b2941efb5ab4b3dbb8eeb354f76edea/",
+        "zagolovok_in_knowledge": "6.3 Ярлык Портфель документов"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/4fb9300371a3461e8bd9303bf93272dc/",
+        "zagolovok_in_knowledge": "6.3 Ярлык Портфель документов"
+      }
+    },
+    {
+      "name": "Документы / Формы документов / Сотруднику на подпись",
+      "link_page": "cabinet/docforms/document_forms/document_forms/#step/to-sign-documents",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/06bddc38a6bf48c2a2e0f7dae5f6bb9e/",
+        "zagolovok_in_knowledge": "7.3.1 Раздел «Сотруднику на подпись»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8ee99b6b88aa428da940b2277d4610d8/",
+        "zagolovok_in_knowledge": "6.4.1 Раздел «Сотруднику на подпись»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1e3c9d870a334fe886b2819a04b94255/",
+        "zagolovok_in_knowledge": "7.3.1 Раздел «Сотруднику на подпись»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/49d231e68b03493cb3eea4ae703150ce/",
+        "zagolovok_in_knowledge": "7.1.1 Раздел «Сотруднику на подпись»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c98e84fc4fd64e539fb065ba3caaf7bd/",
+        "zagolovok_in_knowledge": "6.4.1 Раздел «Сотруднику на подпись»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/8ee99b6b88aa428da940b2277d4610d8/",
+        "zagolovok_in_knowledge": "6.4.1 Раздел «Сотруднику на подпись»"
+      }
+    },
+    {
+      "name": "Документы / Формы документов / Дополнительные документы",
+      "link_page": "cabinet/docforms/document_forms/document_forms/#step/auxilliary-documents",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a0d6b60014804f66a6213c7121afc344/",
+        "zagolovok_in_knowledge": "7.3.2 Раздел «Дополнительные документы»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b7a48f67311d4e808cfadbfef2e900c6/",
+        "zagolovok_in_knowledge": "6.4.2 Раздел «Дополнительные документы»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/60b3389c22514f79a16a0018f3499034/",
+        "zagolovok_in_knowledge": "7.3.2 Раздел «Дополнительные документы»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c5eadc3d6a6546c6bd905a9773cc5efb/",
+        "zagolovok_in_knowledge": "7.1.2 Раздел «Дополнительные документы»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d332fc6bdf9e4daa9881c20c2aaf4c1a/",
+        "zagolovok_in_knowledge": "6.4.2 Раздел «Дополнительные документы»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/b7a48f67311d4e808cfadbfef2e900c6/",
+        "zagolovok_in_knowledge": "6.4.2 Раздел «Дополнительные документы»"
+      }
+    },
+    {
+      "name": "Документы / Формы документов / Документы для проверки РКН",
+      "link_page": "cabinet/docforms/document_forms/document_forms/#step/rkn-documents",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4c8c1c9a55bb47f4924d29fc37e43b96/",
+        "zagolovok_in_knowledge": "7.3.3 Раздел «Документы для проверки РКН»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/080231dbf0b44b729fdb2a555ebd917f/",
+        "zagolovok_in_knowledge": "6.4.3 Раздел «Документы для проверки РКН»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ef6168bb605343e2920ad65aa7c35b2b/",
+        "zagolovok_in_knowledge": "7.3.3 Раздел «Документы для проверки РКН»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ff3d39ab13fc4714a9456458cb9ac580/",
+        "zagolovok_in_knowledge": "6.4.3 Раздел «Документы для проверки РКН»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/080231dbf0b44b729fdb2a555ebd917f/",
+        "zagolovok_in_knowledge": "6.4.3 Раздел «Документы для проверки РКН»"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Уведомления в Роскомнадзор",
+      "link_page": "cabinet/operating_activity/inspection/inspection/list/",
+      "type_page": "simple_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c92e1efe72674552b8e50fa904cc7f22/",
+        "zagolovok_in_knowledge": "7.1.1 Раздел «Перечень Уведомлений / Информационных писем»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ab6aca42b36d49a5846916d991ef4cc6/",
+        "zagolovok_in_knowledge": "7.1.1 Раздел Перечень Уведомлений / Информационных писем"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1488f7cacee946808e9002b706407b3a/",
+        "zagolovok_in_knowledge": "7.1.1 Раздел Перечень Уведомлений / Информационных писем"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cf9d958f0a84474f9bc9ea84c2fcb402/",
+        "zagolovok_in_knowledge": "7.1.1 Раздел «Перечень Уведомлений / Информационных писем»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/ab6aca42b36d49a5846916d991ef4cc6/",
+        "zagolovok_in_knowledge": "7.1.1 Раздел Перечень Уведомлений / Информационных писем"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Согласия на обработку ПДн / Законные представители",
+      "link_page": "cabinet/operating_activity/agreements/wizard_agreements/agreements/#step/representatives",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5b05fbb043994f6c968d5f78c0139e55/",
+        "zagolovok_in_knowledge": "7.2.1 Шаг 1 «Законные представители»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2dbafc5132c54b44bd26d87df76538c4/",
+        "zagolovok_in_knowledge": "7.2.1 Шаг 1 «Законные представители»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cd990ef9c018416bacbe7b31b27b82fb/",
+        "zagolovok_in_knowledge": "7.2.1 Шаг 1 «Законные представители»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/2dbafc5132c54b44bd26d87df76538c4/",
+        "zagolovok_in_knowledge": "7.2.1 Шаг 1 «Законные представители»"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Согласия на обработку ПДн / Формирование согласия на обработку ПДн",
+      "link_page": "cabinet/operating_activity/agreements/wizard_agreements/agreements/#step/agreements",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2d53c7167bde42979f3236173e722496/",
+        "zagolovok_in_knowledge": "7.2.2 Шаг 2 «Формирование согласия на обработку ПДн»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/bff3fbfd259f4ff7bdc161c3fb0727a3/",
+        "zagolovok_in_knowledge": "7.2.2 Шаг 2 «Формирование согласия на обработку ПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/dad5a19bedbf4289a07524dc89c45abb/",
+        "zagolovok_in_knowledge": "7.2.1 Шаг 1 «Законные представители»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c18adf0ae42a4449a1e20d2802ee5196/",
+        "zagolovok_in_knowledge": "7.2.2 Шаг 2 «Формирование согласия на обработку ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/bff3fbfd259f4ff7bdc161c3fb0727a3/",
+        "zagolovok_in_knowledge": "7.2.2 Шаг 2 «Формирование согласия на обработку ПДн»"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Согласия на обработку ПДн / Готовые согласия на обработку ПДн",
+      "link_page": "cabinet/operating_activity/agreements/wizard_agreements/agreements/#step/agreement_documents",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b67b90895ad14cc4ad923e12de5dcdc5/",
+        "zagolovok_in_knowledge": "7.2.3 Шаг 3 «Готовые согласия на обработку ПДн"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8dec183e6ffa440f8f840d2a1716149b/",
+        "zagolovok_in_knowledge": "7.2.2 Шаг 2 «Формирование согласия на обработку ПДн»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/f26858fdb9a14d739086b58d0befe464/",
+        "zagolovok_in_knowledge": "7.2.3 Шаг 3 «Готовые согласия на обработку ПДн»"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал поэкземплярного учёта средств защиты информации",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/protection-tools",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/705bcfd7538b45d8897601af10db993e/",
+        "zagolovok_in_knowledge": "7.4.1 Журнал поэкземплярного учёта средств защиты информации"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/76524f1ea2974cefa27861725443ebce/",
+        "zagolovok_in_knowledge": "7.4.1 Журнал поэкземплярного учёта средств защиты информации"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a9fdf54e469144a986e1805d1ff7eb00/",
+        "zagolovok_in_knowledge": "7.4.1 Журнал поэкземплярного учёта средств защиты информации"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/aa3c18a33c464c51ba16cf9faeece996/",
+        "zagolovok_in_knowledge": "7.2.1 Журнал поэкземплярного учёта средств защиты информации"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8ff2f528fe6b456cafe1f174379e2e13/",
+        "zagolovok_in_knowledge": "7.3.1 Журнал поэкземплярного учёта средств защиты информации"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/76524f1ea2974cefa27861725443ebce/",
+        "zagolovok_in_knowledge": "7.4.1 Журнал поэкземплярного учёта средств защиты информации"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/crypto-tools",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1dc0a01f007449db8100196b208239b4/",
+        "zagolovok_in_knowledge": "7.4.2 Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/211de95450a6424c8a7c16014cbac78e/",
+        "zagolovok_in_knowledge": "7.4.2 Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/903f87b5665e458a96b69b27774d7756/",
+        "zagolovok_in_knowledge": "7.4.2 Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/71a3bdb8133e45caab1775e1b363b72a/",
+        "zagolovok_in_knowledge": "7.2.2 Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/dda960aba76948ef829a252c989ebcce/",
+        "zagolovok_in_knowledge": "7.3.2 Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/211de95450a6424c8a7c16014cbac78e/",
+        "zagolovok_in_knowledge": "7.4.2 Журнал поэкземплярного учёта криптосредств, эксплуатационной и технической документации к ним, ключевых документов"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал учета обращений субъектов персональных данных",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/appeals",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/77a6951259e6443b92a0597010207c03/",
+        "zagolovok_in_knowledge": "7.4.3 Журнал учета обращений субъектов персональных данных"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3640df4077ee4a5283d14763c569a08f/",
+        "zagolovok_in_knowledge": "7.4.3 Журнал учета обращений субъектов персональных данных"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e104388b384c49069ef0efb123cefdf4/",
+        "zagolovok_in_knowledge": "7.4.3 Журнал учета обращений субъектов персональных данных"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/759ba02f65d54995a8107f2a2ec15801/",
+        "zagolovok_in_knowledge": "7.3.3 Журнал учета обращений субъектов персональных данных"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/3640df4077ee4a5283d14763c569a08f/",
+        "zagolovok_in_knowledge": "7.4.3 Журнал учета обращений субъектов персональных данных"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Лицевые счета пользователей криптосредств",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/crypto-accounts",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/428145f8262341128b83614c69064296/",
+        "zagolovok_in_knowledge": "7.4.4 Лицевые счета пользователей криптосредств"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0d6d53b9e3014e6299803fea32bc0e75/",
+        "zagolovok_in_knowledge": "7.4.4 Лицевые счета пользователей криптосредств"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5be0155b32374f89a6a8f2c9567e5856/",
+        "zagolovok_in_knowledge": "7.4.4 Лицевые счета пользователей криптосредств"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/86b83c0ad64c4ec3987b75ad59076d5e/",
+        "zagolovok_in_knowledge": "7.2.3 Лицевые счета пользователей криптосредств"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7ae91d06718d4441a5730ada7ffbf48a/",
+        "zagolovok_in_knowledge": "7.3.4 Лицевые счета пользователей криптосредств"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/0d6d53b9e3014e6299803fea32bc0e75/",
+        "zagolovok_in_knowledge": "7.4.4 Лицевые счета пользователей криптосредств"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал учета хранилищ (сейфов)",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/vaults",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/35083a41c46c4cadaf857288e8699908/",
+        "zagolovok_in_knowledge": "7.4.5 Журнал учета хранилищ (сейфов)"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d11191550eb943d78ca76f0c61ed825a/",
+        "zagolovok_in_knowledge": "7.4.5 Журнал учета хранилищ (сейфов)"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/aa8d527f1f40424c88995fe8f07d0192/",
+        "zagolovok_in_knowledge": "7.4.5 Журнал учета хранилищ (сейфов)"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6d00eb9bea3a4508a84998618209252d/",
+        "zagolovok_in_knowledge": "7.3.5 Журнал учета хранилищ (сейфов)"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/d11191550eb943d78ca76f0c61ed825a/",
+        "zagolovok_in_knowledge": "7.4.5 Журнал учета хранилищ (сейфов)"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал учета нештатных ситуаций ИСПДн, выполнения проф. работ, установки и модификации программных средств на ПЭВМ",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/incedents",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/32ed00fcbc084de8866c4d72c6cc24ba/",
+        "zagolovok_in_knowledge": "7.4.6 Журнал учета нештатных ситуаций ИСПДн, выполнения проф. работ, установки и модификации программных средств на ПЭВМ"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c54cf235dc834a77a6b8738080e9ea41/",
+        "zagolovok_in_knowledge": "7.4.6 Журнал учета нештатных ситуаций ИСПДн, выполнения проф. работ, установки и модификации программных средств на ПЭВМ"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/55ccabb7a49142fda6bfad40797b84de/",
+        "zagolovok_in_knowledge": "7.4.6 Журнал учета нештатных ситуаций ИСПДн, выполнения проф. работ, установки и модификации программных средств на ПЭВМ"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/130d1442010e43dcba14925d2f58b79d/",
+        "zagolovok_in_knowledge": "7.2.4 Журнал учета нештатных ситуаций ИС, выполнения проф.работ, установки и модификации программных средств на ПЭВМ"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a55b9a282f3140d0b14c9363e83e51dd/",
+        "zagolovok_in_knowledge": "7.3.6 Журнал учета нештатных ситуаций ИСПДн, выполнения проф. работ, установки и модификации программных средств на ПЭВМ"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/c54cf235dc834a77a6b8738080e9ea41/",
+        "zagolovok_in_knowledge": "7.4.6 Журнал учета нештатных ситуаций ИСПДн, выполнения проф. работ, установки и модификации программных средств на ПЭВМ"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал учета машинных носителей защищаемой информации, не содержащей сведения, составляющие государственную тайну",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/carriers-gis",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/987dc57253fc42838bfd7409b8d20ee6/",
+        "zagolovok_in_knowledge": "7.4.7 Журнал учета машинных носителей защищаемой информации, не содержащей сведения, составляющие государственную тайну"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/44fcc802cecd4a0c961e26d344b334c1/",
+        "zagolovok_in_knowledge": "7.4.7 Журнал учета машинных носителей персональных данных"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1b35bb9b7d31424aa968c1036485d655/",
+        "zagolovok_in_knowledge": "7.2.5 Журнал учета машинных носителей защищаемой информации, не содержащей сведения, составляющие государственную тайну"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/49a81455e347466895034d6592bbe325/",
+        "zagolovok_in_knowledge": "7.3.7 Журнал учета машинных носителей защищаемой информации, не содержащей сведения, составляющие государственную тайну"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал учета машинных носителей персональных данных",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/carriers-pdn",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1ce3aa504e94460c8f275bb589be6c42/",
+        "zagolovok_in_knowledge": "7.4.7 Журнал учета машинных носителей персональных данных"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/1ce3aa504e94460c8f275bb589be6c42/",
+        "zagolovok_in_knowledge": "7.4.7 Журнал учета машинных носителей персональных данных"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал проверок электронных журналов",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/logs",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1de177b57ce944e294d0a4d86ab8e685/",
+        "zagolovok_in_knowledge": "7.4.8 Журнал проверок электронных журналов"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/891b5ded07d74a48a9aeb9d487b7c2dc/",
+        "zagolovok_in_knowledge": "7.4.8 Журнал проверок электронных журналов"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/de81390f379d4df88930d0d94a8ec842/",
+        "zagolovok_in_knowledge": "7.4.8 Журнал проверок электронных журналов"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4acc8692e64a4e75a403d12bdb9f49d7/",
+        "zagolovok_in_knowledge": "7.2.6 Журнал проверок электронных журналов"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/18e6097ea8b34afd836595f351d57f28/",
+        "zagolovok_in_knowledge": "7.3.8 Журнал проверок электронных журналов"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/891b5ded07d74a48a9aeb9d487b7c2dc/",
+        "zagolovok_in_knowledge": "7.4.8 Журнал проверок электронных журналов"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал учета передачи персональных данных",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/pdn-transmit",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4a8f804ab8df450c936db8528940e813/",
+        "zagolovok_in_knowledge": "7.4.9 Журнал учета передачи персональных данных"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1bfc2731428e4c0986a0fddc65f3ce77/",
+        "zagolovok_in_knowledge": "7.4.9 Журнал учета передачи персональных данных"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/66f622bc3d944e209fa0ee0c1a63f16f/",
+        "zagolovok_in_knowledge": "7.4.9 Журнал учета передачи персональных данных"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/48529c80210b46bba8c587f22297c315/",
+        "zagolovok_in_knowledge": "7.3.9 Журнал учета передачи персональных данных"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/1bfc2731428e4c0986a0fddc65f3ce77/",
+        "zagolovok_in_knowledge": "7.4.9 Журнал учета передачи персональных данных"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал периодического тестирования средств защиты информации",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/protection-tools-testing",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/740f50528b944c73b58ea5e6004bb1fe/",
+        "zagolovok_in_knowledge": "7.4.10 Журнал периодического тестирования средств защиты информации"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/79730cb2424c4c9caab829ce592c2945/",
+        "zagolovok_in_knowledge": "7.4.10 Журнал периодического тестирования средств защиты информации"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6d86b9ca12ff44b69a192f14b1f1c7a6/",
+        "zagolovok_in_knowledge": "7.4.10 Журнал периодического тестирования средств защиты информации"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b1b0d608912e4b5fac1524df42eb95a9/",
+        "zagolovok_in_knowledge": "7.2.7 Журнал периодического тестирования средств защиты информации"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8b070cb4e0c648c1bc59f9d68670b4f2/",
+        "zagolovok_in_knowledge": "7.3.10 Журнал периодического тестирования средств защиты информации"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/79730cb2424c4c9caab829ce592c2945/",
+        "zagolovok_in_knowledge": "7.4.10 Журнал периодического тестирования средств защиты информации"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал обучения пользователей правилам работы с СКЗИ",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/crypto-learning",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/dedf8c4857a14afdad2c019acbd0cd8f/",
+        "zagolovok_in_knowledge": "7.4.11 Журнал обучения пользователей правилам работы с СКЗИ"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8537cca12969481f86d148ae0283f988/",
+        "zagolovok_in_knowledge": "7.4.11 Журнал обучения пользователей правилам работы с СКЗИ"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d70345764caf4a28af61b1f5b90769d4/",
+        "zagolovok_in_knowledge": "7.4.11 Журнал обучения пользователей правилам работы с СКЗИ"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c056ebd104ed4c98a5fa5e8dda38f9e6/",
+        "zagolovok_in_knowledge": "7.2.8 Журнал обучения пользователей правилам работы с СКЗИ"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/64a4d017e04943eea7d685b8dc57dbb9/",
+        "zagolovok_in_knowledge": "7.3.11 Журнал обучения пользователей правилам работы с СКЗИ"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/8537cca12969481f86d148ae0283f988/",
+        "zagolovok_in_knowledge": "7.4.11 Журнал обучения пользователей правилам работы с СКЗИ"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал резервного копирования и восстановления данных",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/backup-restore",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/75f44cd9a77544b2977a3c2c924e02c6/",
+        "zagolovok_in_knowledge": "7.4.12 Журнал резервного копирования и восстановления данных"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/57e252a5acfb4392ae7c633e155497af/",
+        "zagolovok_in_knowledge": "7.4.12 Журнал резервного копирования и восстановления данных"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0a06db2ab1e8407fa7d2085b4e1b50dd/",
+        "zagolovok_in_knowledge": "7.4.12 Журнал резервного копирования и восстановления данных"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/945fe4dc5abb4d8c83b2653e4d127081/",
+        "zagolovok_in_knowledge": "7.2.9 Журнал резервного копирования и восстановления данных"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e431498cd20145fcb07a6237c4bcc687/",
+        "zagolovok_in_knowledge": "7.3.12 Журнал резервного копирования и восстановления данных"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/57e252a5acfb4392ae7c633e155497af/",
+        "zagolovok_in_knowledge": "7.4.12 Журнал резервного копирования и восстановления данных"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Ведение журналов / Журнал информирования и обучения сотрудников по вопросам информационной безопасности",
+      "link_page": "cabinet/operating_activity/registers/registers/registers/#step/education-event",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/af6a47b8554542dd9d39901033a2e181/",
+        "zagolovok_in_knowledge": "7.4.13 Журнал информирования и обучения сотрудников по вопросам информационной безопасности"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/39bfee45b0a64155a87df461f08860e4/",
+        "zagolovok_in_knowledge": "7.4.13 Журнал информирования и обучения сотрудников по вопросам информационной безопасности"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e042f947016640f4946965b475854f23/",
+        "zagolovok_in_knowledge": "7.4.13 Журнал информирования и обучения сотрудников по вопросам информационной безопасности"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a6fa239b903d4b1289eeeba9a4a05d51/",
+        "zagolovok_in_knowledge": "7.3.13 Журнал информирования и обучения сотрудников по вопросам информационной безопасности"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/39bfee45b0a64155a87df461f08860e4/",
+        "zagolovok_in_knowledge": "7.4.13 Журнал информирования и обучения сотрудников по вопросам информационной безопасности"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Проверки регуляторов",
+      "link_page": "cabinet/operating_activity/external/audit/external_audits/list/",
+      "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/369bf0b0943340a7851b9e4e642032aa/",
+        "zagolovok_in_knowledge": "7.1 Раздел «Проверки регуляторов»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/46db69ce8c474de597fc06baca8ee2dd/",
+        "zagolovok_in_knowledge": "7.5 Ярлык «Проверки регуляторов»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/98801bf8adf3495c87b170eec2aec4b9/",
+        "zagolovok_in_knowledge": "7.5 Ярлык Проверки регуляторов"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3724f4d8a6dc4f6e864484e84d937985/",
+        "zagolovok_in_knowledge": "7.5 Раздел «Проверки регуляторов»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a72e8bedcccf46d09aed85bf879901b2/",
+        "zagolovok_in_knowledge": "7.5 Ярлык Проверки регуляторов"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/08d643a732b7459c82385e4dfbcbb862/",
+        "zagolovok_in_knowledge": "7.4 Ярлык «Проверки регуляторов»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/98801bf8adf3495c87b170eec2aec4b9/",
+        "zagolovok_in_knowledge": "7.5 Ярлык Проверки регуляторов"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Внутренние проверки",
+      "link_page": "cabinet/operating_activity/internal/audit/scheduled_audits/list/",
+      "type_page": "simple_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b5a49b0d374c4f4aa9b394273e22fd92/",
+        "zagolovok_in_knowledge": "7.6 Ярлык «Внутренние проверки»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/73aa5cf94c6940028b43498ee6a60b34/",
+        "zagolovok_in_knowledge": "7.6 Ярлык Внутренние проверки"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/68e29da3e5014f37960a966ccdeeadb7/",
+        "zagolovok_in_knowledge": "7.6 Раздел «Внутренние проверки»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e7e721ce80d24710a2f2619860e1f2d4/",
+        "zagolovok_in_knowledge": "7.6 Ярлык Внутренние проверки"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/322b4c5d67a74b079186c10f1f38b41e/",
+        "zagolovok_in_knowledge": "7.5 Ярлык «Внутренние проверки»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/73aa5cf94c6940028b43498ee6a60b34/",
+        "zagolovok_in_knowledge": "7.6 Ярлык Внутренние проверки"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Специалисты по защите информации",
+      "link_page": "cabinet/operating_activity/protection_specialists/protection_specialists/protection_specialists/#step/specialists",
+      "type_page": "simple_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0b3c63dd4ee8463dad1d7cadfee3ab9e/",
+        "zagolovok_in_knowledge": "7.7 Ярлык «Специалисты по защите информации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a83e8f52034f4f95abb7cbf09b4513fe/",
+        "zagolovok_in_knowledge": "7.7 Ярлык Специалисты по защите информации"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/71d6a83e4e454e5fb864ff43eb0331df/",
+        "zagolovok_in_knowledge": "7.6 Ярлык «Специалисты по защите информации»"
+      }
+    },
+    {
+      "name": "Операционная деятельность / Сведения о системе безопасности ОКИИ",
+      "link_page": "cabinet/operating_activity/security_info/base_info/list/",
+      "type_page": "simple_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/11708be444b647ef89d150912c94f8eb/",
+        "zagolovok_in_knowledge": "7.8 Ярлык «Сведения о системе безопасности ОКИИ»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации",
+      "link_page": "cabinet/use_case/index/",
+      "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/42a0d336344046ba950b20b2f4f02c27/",
+        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/072b940fb7b441f8853aa4e06af48916/",
+        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ed3d564db5f241cf847b0e9cecada814/",
+        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ef093df61eeb4d5fa2ede6b753f27fb2/",
+        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/ed3d564db5f241cf847b0e9cecada814/",
+        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Ввод данных",
+      "link_page": "cabinet/use_case/user_creation_case/user_creation_case/#step/common",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/e53f4356b2d14779a666f845e42fad9f/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»",
+        "skip": true
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cb0c3f378f1249d3876febcaf4de95e6/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a899f18078ae479280bcba3d76487138/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c1a6dedee9d246ef8cbf6089cbbd702f/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/153f5ad7f2d2478c96f96fd501dacc18/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»",
+        "skip": true
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/afb678ded46b43fcbcc85403883cb895/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/a899f18078ae479280bcba3d76487138/",
+        "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов ",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11156/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3e5235bf275648eebb77a0b77777cf22/",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов ",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11232/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/d7802ced63fe4f09a917b1324406f018/",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов ",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11233/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ed34159d6dbd46a3860b4beebea91aaf/",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов ",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11245/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/70ca83eeaa1b4ef8a78187251d38b427/",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов ",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11246/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d7d2cc08b1b042ad8dfa1f185f985e83/",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов ",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/13194/#company",
+      "type_page": "step_page",
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/ed34159d6dbd46a3860b4beebea91aaf/",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Ввод данных",
+      "link_page": "cabinet/use_case/distribution_responsibilities_case/distribution_responsibilities_case/#step/distribution_responsibilities_create",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5dff4d548b1c4ca88be65eb2a796ca10/",
+        "zagolovok_in_knowledge": "8.2.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/836992c04de242bcafc5be22fd0b7fd0/",
+        "zagolovok_in_knowledge": "8.2.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/901b56deb64c427092fdf035594aaa64/",
+        "zagolovok_in_knowledge": "8.2.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a559a85f75804eeb89864fc6b6252c84/",
+        "zagolovok_in_knowledge": "8.2.1 Шаг 1 «Ввод данных»",
+        "skip": true
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7a7e5ce06a37423b93255feadf0fc4cf/",
+        "zagolovok_in_knowledge": "8.2.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/836992c04de242bcafc5be22fd0b7fd0/",
+        "zagolovok_in_knowledge": "8.2.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11251/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7489fcbd96db42f480389e6d09b4bed3/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11252/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/528c0be34bb8493ea5f8e20774492073/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11253/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/33c53e0037d94861965ae3ead643ecdd/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11254/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b6ea6faf146440b182d8f5f1a4058df3/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11255/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3491c70e3f1a4a5d90763e62cb20baa8/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11268/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7d3d7ad8a22c4690bf7b7b00059f4b0e/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Назначение ответственных / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/13195/#company",
+      "type_page": "step_page",
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/33c53e0037d94861965ae3ead643ecdd/",
+        "zagolovok_in_knowledge": "8.2.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников",
+      "link_page": "cabinet/use_case/user_access_case/user_access_case/#step/user_access_create",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/679aaac0d9b14c1aa34e1632917f0ddb/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/95b97e7aa43e43b0943e3005090ec819/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»",
+        "skip": true
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/656a25342f8147ecba930d1405d122cc/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/83d08b6192ea451e868a35102ca60f12/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/47a28ea2498a41079b044f53fd66059b/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»",
+        "skip": true
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/0e74e356850a4027a4986e15da91e2bf/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/656a25342f8147ecba930d1405d122cc/",
+        "zagolovok_in_knowledge": "8.3.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11269/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c43617428b9b4a0498281cf7d30349cb/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11270/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/07b07715803845e7b89ace44cc45668f/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11271/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f130f530953d410ea136cd6b44e217e4/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11273/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1b6c1598c95f4a6da45e9c2bb7a04795/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11273/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/db9d9c3ef07d40c9a535233b2e12a483/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11275/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d59b23c872d44c1a924ef4a69e95d380/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Доступ сотрудников / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/13196/#company",
+      "type_page": "step_page",
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/f130f530953d410ea136cd6b44e217e4/",
+        "zagolovok_in_knowledge": "8.3.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Ввод данных",
+      "link_page": "cabinet/use_case/user_dismiss_input_case/user_dismiss_input_case/#step/user_dismiss_case_data",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/253d53b481f943e5ac5b761792101fb5/",
+        "zagolovok_in_knowledge": "8.4.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/58df7c6b75064145b5c3cde8cb168173/",
+        "zagolovok_in_knowledge": "8.4.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5b744956c4604d2ca4d93e7d4380ef5a/",
+        "zagolovok_in_knowledge": "8.4.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9a0b3197bf164b3da4a8375dae3c4d95/",
+        "zagolovok_in_knowledge": "8.4.1 Шаг 1 «Ввод данных»",
+        "skip": true
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e4d89ffabb2c4a6faefcf0db86d8c1b1/",
+        "zagolovok_in_knowledge": "8.4.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/58df7c6b75064145b5c3cde8cb168173/",
+        "zagolovok_in_knowledge": "8.4.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11281/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/52f11d030c2e46148181c412e3255809/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11280/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/fbd32c193d964b928d7337b3ffc900d0/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11279/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c1a53b76f70f483fb492101fd1fee54d/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11278/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6513d79bbbf84e6b85e8bc168dcca1b3/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11277/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/fc167e2285904a059451946df95af263/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/11276/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/273ad36afe3a411dbae33579a0cf015a/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Увольнение сотрудника / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/user_alias/in_work_use_case/get_in_work/13197/#company",
+      "type_page": "step_page",
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/c1a53b76f70f483fb492101fd1fee54d/",
+        "zagolovok_in_knowledge": "8.4.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Ввод данных",
+      "link_page": "cabinet/use_case/software_input_case/software_input_case/#step/software_input_data",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7dc6abd239e245f19dff94c94b9e26b6/",
+        "zagolovok_in_knowledge": "8.5.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/25c72fa8c35f45b8aa4e437138ee26c9/",
+        "zagolovok_in_knowledge": "8.5.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/71ccdd69a5ae4321be97e03fdbb53b61/",
+        "zagolovok_in_knowledge": "8.5.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b573625ab09843cf90578d8bdd847ecb/",
+        "zagolovok_in_knowledge": "8.5.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11283/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/30bc3e31a2de4b09a2f2310cfba69bf2/",
+        "zagolovok_in_knowledge": "8.5.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11285/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/305f7022adf24ee6b9abc9ae0f4e24c6/",
+        "zagolovok_in_knowledge": "8.5.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11287/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/fb91dfa3442e4ead8a07429a428c1246/",
+        "zagolovok_in_knowledge": "8.5.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11289/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/74e64a55c44b441696ee0a74c0130733/",
+        "zagolovok_in_knowledge": "8.5.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11291/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/dc84b582675447129b05a2644a50e1a9/",
+        "zagolovok_in_knowledge": "8.5.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление программного комплекса / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11293/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a2bbc6f7c7534655a774e4f561f48e05/",
+        "zagolovok_in_knowledge": "8.5.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Ввод данных",
+      "link_page": "cabinet/use_case/arm_server_input_case/arm_server_input_case/#step/arm_server_input_data",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/67a9cab8575b41649cd7afb0d97f9787/",
+        "zagolovok_in_knowledge": "8.6.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/48de8f3f6c604e82a8ea145588658317/",
+        "zagolovok_in_knowledge": "8.6.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/fa661c52840b400a99615b555314026e/",
+        "zagolovok_in_knowledge": "8.6.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4de62958d2574714bea601e624227a93/",
+        "zagolovok_in_knowledge": "8.6.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11294/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d29f725b95d746e7b27d1c125bd690aa/",
+        "zagolovok_in_knowledge": "8.6.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11295/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/ea5ce9620c4f44c98e9f46ec1f31fdd5/",
+        "zagolovok_in_knowledge": "8.6.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11296/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5eb921c5112c419cab4559efc9a7b6f9/",
+        "zagolovok_in_knowledge": "8.6.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11297/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/89703cce2f5642d5b81d71891d2ba634/",
+        "zagolovok_in_knowledge": "8.6.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11298/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/74ce06c920064c02bf8ad807a211f835/",
+        "zagolovok_in_knowledge": "8.6.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление АРМ/сервера / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11299/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3a1ccad962144b5f8a95fb851c2ce2d3/",
+        "zagolovok_in_knowledge": "8.6.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Ввод данных",
+      "link_page": "cabinet/use_case/network_hardware_input_case/network_hardware_input_case/#step/network_hardware_input_data",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cff1e386033a415688925fea3d868bda/",
+        "zagolovok_in_knowledge": "8.7.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b0b84309fa2f4b90ae70bfee2de30e56/",
+        "zagolovok_in_knowledge": "8.7.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/82ad21dc9c1740acaa5b847954518210/",
+        "zagolovok_in_knowledge": "8.7.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2c12fa98b0e841cb9e8651b9da0e8e95/",
+        "zagolovok_in_knowledge": "8.7.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11300/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7b905dda459d4df8a16af04e3611106f/",
+        "zagolovok_in_knowledge": "8.7.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11301/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/9a5384956027441d90bff33072decc78/",
+        "zagolovok_in_knowledge": "8.7.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11303/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2e6c67012fe344288e9bce258dd3d187/",
+        "zagolovok_in_knowledge": "8.7.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11305/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/183fb444f38f456aa7bd2df48eb22d13/",
+        "zagolovok_in_knowledge": "8.7.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11306/#company",
+      "type_page": "step_page",
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2e891292192c4a369670da29304d8d11/",
+        "zagolovok_in_knowledge": "8.7.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Добавление оборудования / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/hardware_and_software_alias/in_work_use_case/get_in_work/11307/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cd7e5c2800034466b7ca0b1051b77a99/",
+        "zagolovok_in_knowledge": "8.8.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Установка СЗИ /",
+      "link_page": "cabinet/use_case/installing_protection_expert_input_case/installing_protection_expert_input_case/#step/installing_protection_expert_input_data",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3a6051168ad147eb98a7081fe87d1b8b/",
+        "zagolovok_in_knowledge": "8.8.1 Шаг 1 «Ввод данных»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6fa8f9b4b89448f6bca1e56392750525/",
+        "zagolovok_in_knowledge": "8.8.1 Шаг 1 «Ввод данных»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/07ac4bf24ce741fb82858b87961fdb1c/",
+        "zagolovok_in_knowledge": "8.8.1 Шаг 1 «Ввод данных»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ac9e9a3782cd4568843230a1151f1201/",
+        "zagolovok_in_knowledge": "8.8.1 Шаг 1 «Ввод данных»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Установка СЗИ / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/protection_alias/in_work_use_case/get_in_work/11345/#company",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9ce8d65d32864312bfb6c6601dc74860/",
+        "zagolovok_in_knowledge": "8.8.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Установка СЗИ / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/protection_alias/in_work_use_case/get_in_work/11356/#company",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/b21f3fa7ffdc4f2fa5aa2de1db8f8944/",
+        "zagolovok_in_knowledge": "8.8.2 Шаг 2 «Подведение итогов"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Установка СЗИ / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/protection_alias/in_work_use_case/get_in_work/11360/#company",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9de79495be944b9fbff2fff0737cba18/",
+        "zagolovok_in_knowledge": "8.8.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Установка СЗИ / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/protection_alias/in_work_use_case/get_in_work/11369/#company",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/db70bb4a145740f99257bbe9fbc38165/",
+        "zagolovok_in_knowledge": "8.8.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Рабочие ситуации / Установка СЗИ / Подведение итогов",
+      "link_page": "cabinet/use_case/modal_in_work_use_case/protection_alias/in_work_use_case/get_in_work/11379/#company",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/cd7e5c2800034466b7ca0b1051b77a99/",
+        "zagolovok_in_knowledge": "8.8.2 Шаг 2 «Подведение итогов»"
+      }
+    },
+    {
+      "name": "Органайзер / Задачи",
+      "link_page": "diary/tasks/list",
+      "type_page": "simple_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8ebf4c3168b2477f95896e67831bb61e/",
+        "zagolovok_in_knowledge": "9.2 Задачи"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2048f056e77e4eeca1f3aa370c2d1478/",
+        "zagolovok_in_knowledge": "9.1.2 Задачи"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9ae68cda9c5e4b02b628965eb69fe679/",
+        "zagolovok_in_knowledge": "9.1.2 Задачи"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8da4990d4a624b5caa349c2f65dd5d22/",
+        "zagolovok_in_knowledge": "9.2 Задачи"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/53b0dd95418349028a664c1cf975c11e/",
+        "zagolovok_in_knowledge": "9.2 Задачи"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/2048f056e77e4eeca1f3aa370c2d1478/",
+        "zagolovok_in_knowledge": "9.1.2 Задачи"
+      }
+    },
+    {
+      "name": "Аналитика / Готовность к проверкам / Готовность к проверке Роскомнадзора",
+      "link_page": "cabinet/analytics/readiness/readiness/readiness/#step/rkn",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/fe03d18b79284dd4bd6b6b2d7d8d11b0/",
+        "zagolovok_in_knowledge": "12.1.1 Раздел Готовность к проверке Роскомнадзора"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/98d8d98aded640f183e5cdec0c0f7413/",
+        "zagolovok_in_knowledge": "12.1.1 Раздел Готовность к проверке Роскомнадзора"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/954c2f76fec2429bba28e435a0c669c4/",
+        "zagolovok_in_knowledge": "12.1.1 Раздел Готовность к проверке Роскомнадзора"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/669087db459f43cbb66711a99485cc23/",
+        "zagolovok_in_knowledge": "12.1.1 Раздел Готовность к проверке Роскомнадзора"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/98d8d98aded640f183e5cdec0c0f7413/",
+        "zagolovok_in_knowledge": "12.1.1 Раздел Готовность к проверке Роскомнадзора"
+      }
+    },
+    {
+      "name": "Аналитика / Готовность к проверкам / Готовность к проверке ФСБ России",
+      "link_page": "cabinet/analytics/readiness/readiness/readiness/#step/fsb",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/81d016e58ac84ea0b2c10d828f5a36be/",
+        "zagolovok_in_knowledge": "12.1.2 Раздел Готовность к проверке ФСБ России"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/4c4072c7204f44559e501e93a6f29cfb/",
+        "zagolovok_in_knowledge": "12.1.2 Раздел Готовность к проверке ФСБ России"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/af85b165e5a84fc4bc8e4f6ccdf61e88/",
+        "zagolovok_in_knowledge": "12.1.2 Раздел Готовность к проверке ФСБ России"
+      },
+      "ГИС.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/845d4fb4f6dd4de2a5b0418c5a519e8e/",
+        "zagolovok_in_knowledge": "12.1.1 Раздел Готовность к проверке ФСБ России"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/08e69c73fe4f40fa927250f94fa385bb/",
+        "zagolovok_in_knowledge": "12.2.2 Раздел Готовность к проверке ФСБ России"
+      },
+      "ПДН.НОТАРИУС": {
+        "link_bz": "help/knowledge/page/4c4072c7204f44559e501e93a6f29cfb/",
+        "zagolovok_in_knowledge": "12.1.2 Раздел Готовность к проверке ФСБ России"
+      }
+    },
+    {
+      "name": "Аналитика / Готовность к проверкам / Готовность к проверке ФСТЭК России",
+      "link_page": "cabinet/analytics/readiness/readiness/readiness/#step/fstek",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/05d58f5c6d93459e8950bdb7ad700256/",
+        "zagolovok_in_knowledge": "12.1.3 Раздел Готовность к проверке ФСТЭК России"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/63fb9921f5c8439b9fcbda572facd031/",
+        "zagolovok_in_knowledge": "12.1.3 Раздел Готовность к проверке ФСТЭК России"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/35041459cb90472bb3db04a1e2a734b4/",
+        "zagolovok_in_knowledge": "12.1.3 Раздел Готовность к проверке ФСТЭК России"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/961d834bf0ad4a5cbd1ee1a522f51b7a/",
+        "zagolovok_in_knowledge": "12.1.3 Раздел Готовность к проверке ФСТЭК России"
+      }
+    },
+    {
+      "name": " Аналитика / Реестр информационных систем",
+      "link_page": "cabinet/analytics/registry/infosystem_registry/infosystem_registry/#step/registry",
+      "type_page": "simple_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3d9563a9adfa4cc9bcef68d0560712ad/",
+        "zagolovok_in_knowledge": "12.2 Реестр информационных систем"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/8016f5e91f00467ba0d3ca79c6a623cd/",
+        "zagolovok_in_knowledge": "12.2 Реестр информационных систем"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2d7277a76baf47c5849404f6dccbf03e/",
+        "zagolovok_in_knowledge": "12.2 Реестр ИСПДн"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f39adb50c98944dcbd8142ace8bcf8dc/",
+        "zagolovok_in_knowledge": "12.2 Реестр информационных систем"
+      }
+    },
+    {
+      "name": "Аналитика / Отчёты / Эксплуатируемые системы",
+      "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/infosystems",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/394d04d773fd4d639da9f0510b35ed62/",
+        "zagolovok_in_knowledge": "12.3.1 Шаг 1 «Эксплуатируемые информационные системы»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ea354297c21148beaaffae8cfd41c699/",
+        "zagolovok_in_knowledge": "12.3.1 Шаг 1 «Эксплуатируемые ИСПДн»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/309553ab8d7444f892858d41794fa07c/",
+        "zagolovok_in_knowledge": "12.3.1 Шаг 1 «Эксплуатируемые информационные системы»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e0ed9c69eda442839c58114b0ee9fef2/",
+        "zagolovok_in_knowledge": "12.3.1 Шаг 1 «Эксплуатируемые информационные системы»"
+      }
+    },
+    {
+      "name": "Аналитика / Отчёты / Используемые СЗИ",
+      "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/protections",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d584a83e21bf465b89c7618d67f7b0d4/",
+        "zagolovok_in_knowledge": "12.3.2 Шаг 2 «Используемые СЗИ»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/06789d46293e43a791e33cc24961fbfa/",
+        "zagolovok_in_knowledge": "12.3.2 Шаг 2 «Используемые СЗИ»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1876d647699d4388a6c57eea41ae4360/",
+        "zagolovok_in_knowledge": "12.3.2 Шаг 2 «Используемые СЗИ»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/6b84529ba2d946b0a8040ba5d6c94ef8/",
+        "zagolovok_in_knowledge": "12.3.2 Шаг 2 «Используемые СЗИ»"
+      }
+    },
+    {
+      "name": "Аналитика / Отчёты / Специалисты по защите информации",
+      "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/protection-specialists",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a275a00fff294e8e8d79301636839f5f/",
+        "zagolovok_in_knowledge": "12.3.3 Шаг 3 «Специалисты по защите информации»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7aff2bb5dff54f0ca703d1031af23b53/",
+        "zagolovok_in_knowledge": "12.3.3 Шаг 3 «Специалисты по защите информации»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1b0bf040dc84477582b3acdc6df5b795/",
+        "zagolovok_in_knowledge": "12.3.3 Шаг 3 «Специалисты по защите информации»"
+      }
+    },
+    {
+      "name": "Аналитика / Отчёты / Сотрудники",
+      "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/employees",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f2a7d242a9e848e49b8b723506350e21/",
+        "zagolovok_in_knowledge": "12.3.4 Шаг 4 «Сотрудники»"
+      },
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c0ceae671d7e45ef96ad8b124867b2da/",
+        "zagolovok_in_knowledge": "12.3.4 Шаг 4 «Сотрудники»"
+      },
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c733dc6b74d742ffbb5b46e7409b5b05/",
+        "zagolovok_in_knowledge": "12.3.4 Шаг 4 «Сотрудники»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/88e388d2e9914f61a8b947b8b99bb54c/",
+        "zagolovok_in_knowledge": "12.3.4 Шаг 4 «Сотрудники»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Объекты защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28103/#step/protection_objects_step",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/1649abb2c97442c7bb1c38dcf2896c98/",
+        "zagolovok_in_knowledge": "13.1.1 Шаг 1 «Объекты защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Модель нарушителя",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28103/#step/intruders",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ab82a1dd542a4253b5ca8495d2183632/",
+        "zagolovok_in_knowledge": "13.1.2 Шаг 2 «Модель нарушителя»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Определение класса криптографической защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28103/#step/cryptographic_protection",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/215815fba3fa437dacb5425bf4a24400/",
+        "zagolovok_in_knowledge": "13.1.3 Шаг 3 «Определение класса криптографической защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Возможные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28103/#step/probable_threat_model",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/02c34374eba443419c933cab12618c2f/",
+        "zagolovok_in_knowledge": "13.1.4 Шаг 4 «Возможные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Актуальные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28103/#step/actual_threat_model",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/3d476dbe2c444dc99b69f7b85f6a4385/",
+        "zagolovok_in_knowledge": "13.1.5 Шаг 5 «Актуальные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Адаптация базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28103/#step/adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/22817c93bf8f44d7a05261e516541826/",
+        "zagolovok_in_knowledge": "13.2.1 Шаг 1 «Адаптация базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Уточнение адаптированного базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28103/#step/refined_adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/65ab4c3e723645b5aa78490a24624415/",
+        "zagolovok_in_knowledge": "13.2.2 Шаг 2 «Уточнение адаптированного базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Дополнение мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28103/#step/supplemented_adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f420159c50c64fdc88eb2bd320bd58fb/",
+        "zagolovok_in_knowledge": "13.2.3 Шаг 3 «Дополнение мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Компенсация мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28103/#step/compensate_adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a8ea6b93376244a6a79be72b2e11f9fa/",
+        "zagolovok_in_knowledge": "13.2.4 Шаг 4 «Компенсация мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Объекты защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28670/#step/protection_objects_step",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a7032b0c52ca40de8aaabc7135fa8635/",
+        "zagolovok_in_knowledge": "13.1.1 Шаг 1 «Объекты защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Модель нарушителя",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28670/#step/intruders",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/ff11d84319f54b2793a4a0dcf18fff5a/",
+        "zagolovok_in_knowledge": "13.1.2 Шаг 2 «Модель нарушителя»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Определение класса криптографической защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/28670/#step/probable_threat_model",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/e59d75a80f4640bf95dfb9deece72287/",
+        "zagolovok_in_knowledge": "13.1.3 Шаг 3 «Определение класса криптографической защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Возможные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28670/#step/probable_threat_model",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/328a27f8ff3c443baa6d91bf20d1b43f/",
+        "zagolovok_in_knowledge": "13.1.4 Шаг 4 «Возможные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Актуальные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28670/#step/actual_threat_model",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/718a885b93014e179ab051e208655911/",
+        "zagolovok_in_knowledge": "13.1.5 Шаг 5 «Актуальные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Адаптация базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28670/#step/adapted_measures",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/b1f14bf1b8924180926ed2cc86465290/",
+        "zagolovok_in_knowledge": "13.2.1 Шаг 1 «Адаптация базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Уточнение адаптированного базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28670/#step/refined_adapted_measures",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/c01076574643440e9417dfc904de82d0/",
+        "zagolovok_in_knowledge": "13.2.2 Шаг 2 «Уточнение адаптированного базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Дополнение мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28670/#step/supplemented_adapted_measures",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/7e7c87bd5b324eee85c6564f6619a239/",
+        "zagolovok_in_knowledge": "13.2.3 Шаг 3 «Дополнение мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Компенсация мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28670/#step/compensate_adapted_measures",
+      "type_page": "step_page",
+      "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/262c61d0565b4ce2b8f8e8237c140bdd/",
+        "zagolovok_in_knowledge": "13.2.4 Шаг 4 «Компенсация мер по защиты информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Объекты защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28705/#step/protection_objects_step",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a71d03b3824e4ecaa0710e4657e697e3/",
+        "zagolovok_in_knowledge": "13.1.1 Шаг 1 «Объекты защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Модель нарушителя",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28705/#step/intruders",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2c768110a766423fba0fe249c0703169/",
+        "zagolovok_in_knowledge": "13.1.2 Шаг 2 «Модель нарушителя»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Определение класса криптографической защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/28705/#step/probable_threat_model",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/74272760c56c46b59f4cde49c19ac3c9/",
+        "zagolovok_in_knowledge": "13.1.3 Шаг 3 «Определение класса криптографической защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Возможные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk28705/#step/probable_threat_model",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/12f06da4e48c4111a9db4a08f213f4e2/",
+        "zagolovok_in_knowledge": "13.1.4 Шаг 4 «Возможные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Актуальные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28705/#step/actual_threat_model",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/35c6362d8c9e4ea8987673858664640c/",
+        "zagolovok_in_knowledge": "13.1.5 Шаг 5 «Актуальные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Адаптация базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28705/#step/adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d5feb547a5f54d848e6711d180bab6af/",
+        "zagolovok_in_knowledge": "13.2.1 Шаг 1 «Адаптация базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Уточнение адаптированного базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28705/#step/refined_adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/71c9818ce9494789acf913017cb57cef/",
+        "zagolovok_in_knowledge": "13.2.2 Шаг 2 «Уточнение адаптированного базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Дополнение мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28705/#step/supplemented_adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/32a14fe9ffd742dfb31e507a904cfd02/",
+        "zagolovok_in_knowledge": "13.2.3 Шаг 3 «Дополнение мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Компенсация мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/parent_pk/28705/#step/compensate_adapted_measures",
+      "type_page": "step_page",
+      "КИИ.ПДН.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/346ec01e7f7341b49bc9535eb65a5533/",
+        "zagolovok_in_knowledge": "13.2.4 Шаг 4 «Компенсация мер по защиты информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Объекты защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/parent_pk/28711/#step/protection_objects_step",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/2c1a6838ae42475fa238dc2b5c254ff5/",
+        "zagolovok_in_knowledge": "13.1.1 Шаг 1 «Объекты защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Модель нарушителя",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/28711/#step/intruders",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/991b8a2c9882439b8d25461af79132e8/",
+        "zagolovok_in_knowledge": "13.1.2 Шаг 2 «Модель нарушителя»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Определение класса криптографической защиты",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/28711/#step/cryptographic_protection",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/312af2828a9e4099b426b3e30ee4d4aa/",
+        "zagolovok_in_knowledge": "13.1.3 Шаг 3 «Определение класса криптографической защиты»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Возможные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/28711/#step/probable_threat_model",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/a7d9b9ad41ff4994aa2ba38bf756b3a5/",
+        "zagolovok_in_knowledge": "13.1.4 Шаг 4 «Возможные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Моделирование угроз / Актуальные угрозы безопасности информации",
+      "link_page": "cabinet/expert_threats/threat_modeling_view/threat_modeling_wizard/28711/#step/actual_threat_model",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/d296a81b11d34b388f28a71919a09a79/",
+        "zagolovok_in_knowledge": "13.1.5 Шаг 5 «Актуальные угрозы безопасности информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Адаптация базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/28711/#step/adapted_measures",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/bf4e6a92a4754029a7d2c08d1769eab3/",
+        "zagolovok_in_knowledge": "13.2.1 Шаг 1 «Адаптация базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Уточнение адаптированного базового набора мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/28711/#step/refined_adapted_measures",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/241bbd302eb94c7181596dade5420406/",
+        "zagolovok_in_knowledge": "13.2.2 Шаг 2 «Уточнение адаптированного базового набора мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Дополнение мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/28711/#step/supplemented_adapted_measures",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/5b7a9212854e40ceaa42fca2b83b0cdb/",
+        "zagolovok_in_knowledge": "13.2.3 Шаг 3 «Дополнение мер по защите информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Меры обеспечения ИБ / Компенсация мер по защите информации",
+      "link_page": "cabinet/expert_threats/manage_measures_view/management_measures_wizard/28711/#step/compensate_adapted_measures",
+      "type_page": "step_page",
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/31393f71346e48f1914cf3d04179719d/",
+        "zagolovok_in_knowledge": "13.2.4 Шаг 4 «Компенсация мер по защиты информации»"
+      }
+    },
+    {
+      "name": "Управление ИБ / Уязвимости / Установленное ПО",
+      "link_page": "cabinet/analytics/vulnerability/vulnerability/vulnerability/#step/installed_software",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/70f01b04395542aab52164f182f61dbe/",
+        "zagolovok_in_knowledge": "13.3.1 Шаг 1 «Установленное ПО»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/78e30c7a22b84ea18898f35301dbc055/",
+        "zagolovok_in_knowledge": "13.3 Ярлык Уязвимости"
+      }
+    },
+    {
+      "name": "Управление ИБ / Уязвимости / Устранение уязвимостей",
+      "link_page": "cabinet/analytics/vulnerability/vulnerability/vulnerability/#step/elimination/",
+      "type_page": "step_page",
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/f250b825a55f4dfc8e6055800e3a1f51/",
+        "zagolovok_in_knowledge": "13.3.2 Шаг 2 «Устранение уязвимостей»"
+      },
+      "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/64a84411fae2468c94b0cd32af299050/",
+        "zagolovok_in_knowledge": "13.3.2 Шаг 2 «Устранение уязвимостей»"
+      }
+    }
+  ]
+}

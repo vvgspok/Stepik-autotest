@@ -44,8 +44,8 @@ class TestGeneral():
         field_actual_address = self.browser.find_element_by_xpath("//*[@id='id_actual_address_1']")
         field_mailing_index = self.browser.find_element_by_xpath("//*[@id='id_mailing_address_0']")
         field_mailing_address = self.browser.find_element_by_xpath("//*[@id='id_mailing_address_1']")
+        field_email = self.browser.find_element_by_xpath("//*[@id = 'id_email']")
         field_checkbox_department = self.browser.find_element_by_xpath("//*[@id='id_has_departments']")
-
 
         field_inn = field_inn.get_attribute("value")
         print("\n",field_inn)
@@ -95,6 +95,9 @@ class TestGeneral():
 
         field_mailing_address = field_mailing_address.get_attribute("value")
         print(field_mailing_address)
+
+        field_email = field_email.get_attribute("value")
+        print(field_email)
 
         field_checkbox_department = field_checkbox_department.get_attribute("value")
         print(field_checkbox_department)

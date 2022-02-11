@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 from pages.authorization.authorization_functions import AuthorizationFunctions,AuthorizationLocators
-from pages.base_page import BasePage
+#from pages.base_page import BasePage
 
 
 @pytest.fixture(scope = "session", autouse="True")

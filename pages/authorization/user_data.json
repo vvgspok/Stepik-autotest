@@ -1,0 +1,59 @@
+
+  [
+    {
+      "login": "user_without_rule_to_apps",
+      "password": "user_without_rule_to_apps",
+      "alert": "Отсутствует доступ к приложению!"
+    },
+    {
+      "login": "block_user",
+      "password": "block_user",
+      "alert": "Пользователь заблокирован во всех приложениях!"
+    },
+    {
+      "login": "user_without_manager",
+      "password": "",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "user_without_manager",
+      "password": "12312312",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "user_without_manager",
+      "password": "user_without_manager1",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "user_without_manager",
+      "password": "USER_WITHOUT_MANAGER",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "",
+      "password": "user_without_manager",
+      "alert": ""
+    },
+    {
+      "login": "1uasd2asdasd3",
+      "password": "user_without_manager",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "user_without_manager1",
+      "password": "user_without_manager",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "123123",
+      "password": "123123",
+      "alert": "Неверное имя пользователя или пароль!"
+    },
+    {
+      "login": "user_without_manager",
+      "password": "user_without_manager",
+      "alert": "Login"
+    }
+  ]
+
