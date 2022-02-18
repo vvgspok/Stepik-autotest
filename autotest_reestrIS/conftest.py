@@ -6,7 +6,8 @@ from selenium.webdriver.common.by import By
 
 from pages.authorization.authorization_functions import AuthorizationFunctions,AuthorizationLocators
 #from pages.base_page import BasePage
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 @pytest.fixture(scope = "session", autouse="True")
 def prepare(request,platform,username,password,system_name):

@@ -1,7 +1,7 @@
 import time
 from collections import defaultdict
 
-
+import os
 import allure
 from allure_commons.types import AttachmentType
 from selenium.webdriver.chrome.webdriver import WebDriver
@@ -79,6 +79,45 @@ class BasePage():
                 time.sleep(0.5)
         except:
             pass
+
+    def file_upload(self, name_file, delete=False):
+        """
+        Загрузка файла
+        в "name_fail"-передать наименование файла
+
+        Пример вызова функции:
+            name_file = 'worker.xlsx' - Передаем наименование файла
+            BasePage.file_upload(self, name_file) - Вызов функции
+        """
+        self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-default']").click()
+
+        # Ставится чекбокс = "Удалить предыдущие данные перед импортом"
+        if delete == True:
+            WebDriverWait(self.browser, 5).until(
+                EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Удалить предыдущие данные перед импортом')]"))
+            ).click()
+
+        current_dir = os.path.abspath(os.path.dirname(__file__))
+        file_path = os.path.join(current_dir, name_file)
+        element = WebDriverWait(self.browser, 10).until(
+            EC.presence_of_element_located((By.ID, "id_upload_file")))
+        element.send_keys(file_path)
+
+        try:
+            WebDriverWait(self.browser, 10).until(
+                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Загружен файл')]")))
+        except Exception as e:
+            assert False, "Файл не загружается;" + e
+        self.browser.find_element_by_xpath("//*[@class='modal-content']//*[@class='btn btn-sm btn-success']").click()
+
+        WebDriverWait(self.browser, 30).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Операция успешно завершена.')]")))
+
+        button_close = WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success btn-close']"))
+        )
+        button_close.click()
+        return
 
     def проверка_url_в_адресной_строке(self, url):
         self.ожидание_прогрузки_страницы()
@@ -2041,3 +2080,4 @@ class BasePage():
                     return True
                 except:
                     return False
+

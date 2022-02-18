@@ -1,3 +1,4 @@
+# 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
 import time
 from collections import defaultdict
 
@@ -11,11 +12,15 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common import keys
 import os
 
+
 @pytest.mark.usefixtures("prepare")
-class TestGeneral():
+class TestGeneral:
     def test_step1(self):
 
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/common")
@@ -104,52 +109,108 @@ class TestGeneral():
         field_checkbox_department = field_checkbox_department.get_attribute("value")
         print(field_checkbox_department)
 
-
     def test_step2(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/structure")
         BasePage.ожидание_прогрузки_страницы(self)
-        """
-        Загрузка списка структурных подразделений из файла 
-        """
-        self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-default']").click()
-        current_dir = os.path.abspath(os.path.dirname(__file__))
-        file_path = os.path.join(current_dir, 'SP.xlsx')
-        element = WebDriverWait(self.browser, 10).until(
-        EC.presence_of_element_located((By.ID, "id_upload_file")))
-        element.send_keys(file_path)
-        try:
-                WebDriverWait(self.browser, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Загружен файл')]")))
-        except Exception as e:
-            assert False, "Файл не загружается;" + e
-        self.browser.find_element_by_xpath("//*[@class='modal-content']//*[@class='btn btn-sm btn-success']").click()
+        '''
+        """Загрузка файла"""
+        name_file = 'SP.xlsx'
+        BasePage.file_upload(self, name_file)
+        '''
+        """Проверка на обязательное поле"""
 
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success']"))
+        ).click()
 
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success']"))
+        ).click()
+
+        obligatory_field_name = WebDriverWait(self.browser, 100).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Это поле обязательно.')]"))).text
+        assert obligatory_field_name == "Это поле обязательно.", f'Сообщение "{obligatory_field_name}" не появилось'
+        """Добавление структурного подразделения"""
+        field_name_SP = self.browser.find_element_by_xpath("//*[@id='id_name']")
+        field_name_SP.send_keys("Наименование СП")
+        checkbox_filial = self.browser.find_element_by_xpath("//*[@id='id_affiliate']").click()
+
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success']"))
+        ).click()
+
+        obligatory_field_kpp = WebDriverWait(self.browser, 100).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Для филиала необходимо указать КПП')]"))).text
+        assert obligatory_field_kpp == "Для филиала необходимо указать КПП", f'Сообщение "{obligatory_field_kpp}" не появилось'
+        field_kpp = self.browser.find_element_by_xpath("//*[@id='id_kpp']")
+        field_kpp.send_keys("КПП тестовый")
+
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success']"))
+        ).click()
+        obligatory_field_kpp = WebDriverWait(self.browser, 100).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Разрешённые символы: цифры')]"))).text
+        assert obligatory_field_kpp == "Разрешённые символы: цифры", f'Сообщение "{obligatory_field_kpp}" не появилось'
+        newfield_kpp = self.browser.find_element_by_xpath("//*[@id='id_kpp']")
+        newfield_kpp.clear()
+        newfield_kpp.send_keys("123456789")
+
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success']"))
+        ).click()
+        BasePage.select_row(self)
+        time.sleep(5)
 
     def test_step3(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/employees")
         BasePage.ожидание_прогрузки_страницы(self)
+        '''   
         """
-        Загрузка списка сотрудников из файла
+        Загрузка файла
         """
-        self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-default']").click()
-        current_dir = os.path.abspath(os.path.dirname(__file__))
-        file_path = os.path.join(current_dir, 'worker.xlsx')
-        element = WebDriverWait(self.browser, 10).until(
-            EC.presence_of_element_located((By.ID, "id_upload_file")))
-        element.send_keys(file_path)
-        try:
-            WebDriverWait(self.browser, 10).until(
-                EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Загружен файл')]")))
-        except Exception as e:
-            assert False, "Файл не загружается;" + e
-        self.browser.find_element_by_xpath("//*[@class='modal-content']//*[@class='btn btn-sm btn-success']").click()
+        name_file = 'worker.xlsx'
+        BasePage.file_upload(self, name_file)
+        BasePage.file_upload(self, name_file, delete=True)
+        '''
+        # len_fio = self.browser.find_elements_by_xpath("//*[contains(@class, 'employeestable ')]/tbody/tr")
+        # print(len(len_fio))
+
+        table = BasePage.Table.get_table_by_name(self, "Сотрудники организации")
+        rows = table.search_record_by_value("ФИО СОТРУДНИКА", "Петрова Елена Николаевна")
+
+        s = 1
+
 
     def test_step4(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/crypto-access-std")
         BasePage.ожидание_прогрузки_страницы(self)
 
+        '''
+        Ответственный пользователь криптосредств
+        '''
+        # add_OPK = self.browser.find_element_by_xpath("//*[@class='btn btn-info']")
+        #  add_OPK.click()
+
+        '''
+        Перечень лиц, имеющих доступ в помещения, содержащие криптосредства, 
+        в том числе допущенных к работе с криптосредствами         
+        '''
+        add_access = self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-success']")
+        add_access.click()
+        time.sleep(5)
+        l = self.browser.find_elements_by_xpath("//*[contains(@class, 'selectmultiplepersonaccesstable ')]/tbody/tr")
+
+        add_all_fio = WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выбрать всех')]"))
+        )
+        add_all_fio.click()
+
+
     def test_step5(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/rooms_vaults")
         BasePage.ожидание_прогрузки_страницы(self)
-
+        """
+        Загрузка файла
+        """
+        name_file = 'cabinet.xls'
+        BasePage.file_upload(self, name_file)
