@@ -12,6 +12,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import Select
@@ -112,11 +113,11 @@ class TestGeneral:
     def test_step2(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/structure")
         BasePage.ожидание_прогрузки_страницы(self)
-        '''
+
         """Загрузка файла"""
         name_file = 'SP.xlsx'
         BasePage.file_upload(self, name_file)
-        '''
+
         """Проверка на обязательное поле"""
 
         WebDriverWait(self.browser, 5).until(
@@ -130,6 +131,7 @@ class TestGeneral:
         obligatory_field_name = WebDriverWait(self.browser, 100).until(
             EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Это поле обязательно.')]"))).text
         assert obligatory_field_name == "Это поле обязательно.", f'Сообщение "{obligatory_field_name}" не появилось'
+
         """Добавление структурного подразделения"""
         field_name_SP = self.browser.find_element_by_xpath("//*[@id='id_name']")
         field_name_SP.send_keys("Наименование СП")
@@ -164,22 +166,19 @@ class TestGeneral:
     def test_step3(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/employees")
         BasePage.ожидание_прогрузки_страницы(self)
-        '''   
-        """
-        Загрузка файла
         """
         name_file = 'worker.xlsx'
         BasePage.file_upload(self, name_file)
-        BasePage.file_upload(self, name_file, delete=True)
-        '''
-        # len_fio = self.browser.find_elements_by_xpath("//*[contains(@class, 'employeestable ')]/tbody/tr")
-        # print(len(len_fio))
+        BasePage.file_upload(self, name_file, delete=False)
+        """
 
         table = BasePage.Table.get_table_by_name(self, "Сотрудники организации")
-        rows = table.search_record_by_value("ФИО СОТРУДНИКА", "Петрова Елена Николаевна")
+        rows = table.search_record_by_value("ФИО СОТРУДНИКА", "Вечный Урок Насреддинович")
+        BasePage.file_export(self)
+        self.browser.refresh(self)
+        BasePage.all_delete(self)
 
-        s = 1
-
+        time.sleep(5)
 
     def test_step4(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/crypto-access-std")
@@ -188,29 +187,46 @@ class TestGeneral:
         '''
         Ответственный пользователь криптосредств
         '''
-        # add_OPK = self.browser.find_element_by_xpath("//*[@class='btn btn-info']")
-        #  add_OPK.click()
 
-        '''
-        Перечень лиц, имеющих доступ в помещения, содержащие криптосредства, 
-        в том числе допущенных к работе с криптосредствами         
-        '''
-        add_access = self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-success']")
-        add_access.click()
+        self.browser.find_element_by_xpath("//*[@class='btn btn-info']").click()
+        BasePage.ожидание_прогрузки_страницы(self)
+        table = BasePage.Table.get_table_by_name(self, "Выбор сотрудника")
+        rows = table.search_record_by_value("ФИО СОТРУДНИКА", "Коварный Отголосок Спинозович")
+        rows = table.search_record_by_value("ДОЛЖНОСТЬ СОТРУДНИКА", "телохранитель")
+        self.browser.find_elements_by_xpath("//*[@class='radio radio-awesome radio-success radio-inline']")
+        self.browser.find_element_by_xpath("//*[@class='modal-footer']/*[contains(text(), 'Выбрать сотрудника')]").click()
+
+
+
         time.sleep(5)
-        l = self.browser.find_elements_by_xpath("//*[contains(@class, 'selectmultiplepersonaccesstable ')]/tbody/tr")
 
-        add_all_fio = WebDriverWait(self.browser, 5).until(
-            EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выбрать всех')]"))
-        )
-        add_all_fio.click()
+
+
+
+
+
+
+
+        # '''
+        # Перечень лиц, имеющих доступ в помещения, содержащие криптосредства,
+        # в том числе допущенных к работе с криптосредствами
+        # '''
+        # add_access = self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-success']")
+        # add_access.click()
+        # time.sleep(5)
+        # l = self.browser.find_elements_by_xpath("//*[contains(@class, 'selectmultiplepersonaccesstable ')]/tbody/tr")
+        #
+        # add_all_fio = WebDriverWait(self.browser, 5).until(
+        #     EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выбрать всех')]"))
+        # )
+        # add_all_fio.click()
 
 
     def test_step5(self):
-        self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/rooms_vaults")
+        self.browser.get(self.common_address + "cabinet/main_wizard/#step/rooms_vaults")
         BasePage.ожидание_прогрузки_страницы(self)
-        """
-        Загрузка файла
         """
         name_file = 'cabinet.xls'
         BasePage.file_upload(self, name_file)
+        """
+        BasePage.file_export(self)

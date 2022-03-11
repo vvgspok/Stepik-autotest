@@ -1,6 +1,7 @@
 import time
 from collections import defaultdict
 
+import pytest
 import os
 import allure
 from allure_commons.types import AttachmentType
@@ -10,7 +11,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
-
+from selenium.common.exceptions import NoSuchElementException
 from pages.base_locators import BaseLocators
 from .main_functions import проверка_ссылки
 from .main_settings import MAIN_URL
@@ -117,6 +118,46 @@ class BasePage():
             EC.element_to_be_clickable((By.XPATH, "//*[@class='btn btn-sm btn-success btn-close']"))
         )
         button_close.click()
+        return
+
+
+    def file_export(self):
+        '''
+        Экпсорт в EXCEL
+        '''
+        self.browser.find_element_by_xpath("//*[@class ='tableFloatingHeaderOriginal']"
+                                           "//*[@class ='checkbox checkbox-awesome checkbox-success checkbox-inline']").click()
+        self.browser.find_element_by_xpath("//*[@id='.employeestable_ga']").click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[text()='Экспорт в CSV']"))).click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выполнить действие для всех значений')]")))
+        self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
+
+        self.browser.find_element_by_xpath("//*[@id='.employeestable_ga']").click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[text()='Экспорт в XLS']"))).click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выполнить действие для всех значений')]")))
+        self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
+
+        self.browser.find_element_by_xpath("//*[@id='.employeestable_ga']").click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[text()='Экспорт в XLSX']"))).click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выполнить действие для всех значений')]")))
+        self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
+        return
+
+    def all_delete(self):
+        self.browser.find_element_by_xpath("//*[@class ='tableFloatingHeaderOriginal']"
+                                           "//*[@class ='checkbox checkbox-awesome checkbox-success checkbox-inline']").click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[text()='Удалить отмеченные']"))).click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable(
+                (By.XPATH, "//*[contains(text(), 'Данные будут удалены без возможности восстановления.')]")))
+        self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
         return
 
     def проверка_url_в_адресной_строке(self, url):
@@ -2080,4 +2121,5 @@ class BasePage():
                     return True
                 except:
                     return False
+
 
