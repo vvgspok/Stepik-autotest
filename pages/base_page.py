@@ -1,8 +1,8 @@
+import os
+import random
 import time
 from collections import defaultdict
 
-import pytest
-import os
 import allure
 from allure_commons.types import AttachmentType
 from selenium.webdriver.chrome.webdriver import WebDriver
@@ -11,10 +11,30 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver import ActionChains
+
+
 from pages.base_locators import BaseLocators
-from .main_functions import проверка_ссылки
-from .main_settings import MAIN_URL
+from pages.main_functions import проверка_ссылки
+from pages.main_settings import MAIN_URL
+
+
+class Files():
+    path = ""
+    def __init__(self,path):
+        self.path = path
+    def get_last_modifed_file(self,extension=""):
+        files = os.listdir(self.path)
+        files = [os.path.join(self.path, file) for file in files]
+        if extension != "":
+            new_files = []
+            for file in files:
+                if file.find(extension) > -1:
+                    new_files.append(file)
+            files = new_files
+        files = [file for file in files if os.path.isfile(file)]
+        filepath = max(files, key=os.path.getctime)
+        return filepath
 
 
 class BasePage():
@@ -72,20 +92,22 @@ class BasePage():
             return False
         return True
 
-    def ожидание_прогрузки_страницы(self):
-        loadind = True
-        try:
-            while loadind:
-                self.browser.find_element(By.CSS_SELECTOR, ".loading")
-                time.sleep(0.5)
-        except:
-            pass
+    def not_next_step(self):
+        """
+        Укажите "незполненные данные"
+        :return:
+        """
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Следующий шаг')]"))).click()
+        WebDriverWait(self.browser, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(text(), 'Укажите')]")))
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn-sm btn btn-success']"))).click()
 
     def file_upload(self, name_file, delete=False):
         """
         Загрузка файла
         в "name_fail"-передать наименование файла
-
         Пример вызова функции:
             name_file = 'worker.xlsx' - Передаем наименование файла
             BasePage.file_upload(self, name_file) - Вызов функции
@@ -95,7 +117,8 @@ class BasePage():
         # Ставится чекбокс = "Удалить предыдущие данные перед импортом"
         if delete == True:
             WebDriverWait(self.browser, 5).until(
-                EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Удалить предыдущие данные перед импортом')]"))
+                EC.element_to_be_clickable(
+                    (By.XPATH, "//*[contains(text(), 'Удалить предыдущие данные перед импортом')]"))
             ).click()
 
         current_dir = os.path.abspath(os.path.dirname(__file__))
@@ -120,7 +143,6 @@ class BasePage():
         button_close.click()
         return
 
-
     def file_export(self):
         '''
         Экпсорт в EXCEL
@@ -133,6 +155,7 @@ class BasePage():
         WebDriverWait(self.browser, 5).until(
             EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выполнить действие для всех значений')]")))
         self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
+        self.browser.execute_script("window.scrollBy(0, 100);")
 
         self.browser.find_element_by_xpath("//*[@id='.employeestable_ga']").click()
         WebDriverWait(self.browser, 5).until(
@@ -140,6 +163,7 @@ class BasePage():
         WebDriverWait(self.browser, 5).until(
             EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выполнить действие для всех значений')]")))
         self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
+        self.browser.execute_script("window.scrollBy(0, 100);")
 
         self.browser.find_element_by_xpath("//*[@id='.employeestable_ga']").click()
         WebDriverWait(self.browser, 5).until(
@@ -157,8 +181,19 @@ class BasePage():
         WebDriverWait(self.browser, 5).until(
             EC.element_to_be_clickable(
                 (By.XPATH, "//*[contains(text(), 'Данные будут удалены без возможности восстановления.')]")))
-        self.browser.find_element_by_xpath("//*[@class='btn-sm btn btn-success']").click()
+        WebDriverWait(self.browser, 5).until(
+            EC.element_to_be_clickable((By.XPATH, "//*[@class='btn-sm btn btn-success']"))).click()
         return
+
+
+    def ожидание_прогрузки_страницы(self):
+        loadind = True
+        try:
+            while loadind:
+                self.browser.find_element(By.CSS_SELECTOR, ".loading")
+                time.sleep(0.5)
+        except:
+            pass
 
     def проверка_url_в_адресной_строке(self, url):
         self.ожидание_прогрузки_страницы()
@@ -255,8 +290,7 @@ class BasePage():
                 wait = False
             except:
                 time.sleep(0.5)
-        assert wait == False, "Элемент '" + how + "'-'" + what + "' не появился  в течении заданного таймаута" + str(
-            timeout) + " секунд"
+
 
     def wait_while_elementS_presented(self, how, what, timeout=10):
         '''
@@ -441,9 +475,10 @@ class BasePage():
                     self.element.find_element_by_xpath(
                         "//span[contains(.,'" + new_value + "') and @class='select2-match']/parent::*").click()
                 except:
+                    pass
                     # Если не нашли значение - очищаем поле ввода по Esc. Возможно костыль?
-                    self.element.find_element_by_css_selector(
-                        ".select2-choices .select2-search-field .select2-input").send_keys(Keys.ESCAPE)
+                self.element.find_element_by_css_selector(
+                    ".select2-choices .select2-search-field .select2-input").send_keys(Keys.ESCAPE)
 
                 array = self.element.find_elements_by_css_selector(".select2-search-choice div")
                 self.value = []
@@ -451,6 +486,7 @@ class BasePage():
                     self.value.append(element.text)
             except:
                 pass
+
 
         def clean_value(self):
             values = self.element.find_elements_by_css_selector(".select2-choices .select2-search-choice-close")
@@ -500,8 +536,10 @@ class BasePage():
                 self.element.find_element_by_xpath(
                     "//ancestor::body//*[@id='select2-drop']//*[@class='select2-result-label']").click()
             except:
-                self.element.find_element_by_xpath("//ancestor::body//*[@id='select2-drop']//input").send_keys(
-                    Keys.ESCAPE)
+                try:
+                    self.element.find_element_by_xpath("//ancestor::body//*[@id='select2-drop']//input").send_keys(Keys.ESCAPE)
+                except:
+                    pass
             self.value = self.element.find_element_by_css_selector(".select2-chosen").text
 
         def wait_searching(self):
@@ -593,9 +631,43 @@ class BasePage():
                     pass
 
     class DeclensionWidget(BaseElement):
+        # Поле ввода со склонением
         def __init__(self, widget):
             self.element = widget
             self.element_class = "declensionwidget"
+
+    class DateRange(BaseElement):
+        # Элементы типа "С-ПО" дату, значение, интервал
+        inputs = None
+
+        def __init__(self,daterange):
+            self.element = daterange
+            self.element_class = "daterange"
+            self.inputs = self.element.find_elements_by_xpath("//input[@class='form-control']")
+            self.get_value()
+
+        def set_value(self,values:list):
+            if len(values) > len(self.inputs):
+                assert False, 'Количество устанавливаемых значений больше количества полей ввода'
+            elif len(values) < len(self.inputs):
+                assert False, 'Количество устанавливаемых значений меньше количества полей ввода'
+            elif len(values) < len(self.inputs):
+                for input,value in zip(self.inputs,values):
+                    input.click();
+                    input.send_keys(value)
+
+        def get_value(self):
+            values = []
+            for input in self.inputs:
+                try:
+                    value = input.get_attribute("value")
+                except:
+                    try:
+                        value = input.text
+                    except:
+                        pass
+                values.append(value)
+            return values
 
     # endregion
     # region Сложные, составные элементы
@@ -613,6 +685,11 @@ class BasePage():
 
               """
             self.element = formGroup
+            try:
+                label =  self.element.find_element_by_xpath(".//*[contains(@class,'help-link')]//label//span")
+                self.name = label.text
+            except:
+                pass
             element = defaultdict(dict)
             # region Парсинг элементов
             try:
@@ -690,6 +767,13 @@ class BasePage():
                 obj = BasePage.Row(row)
             except:
                 pass
+
+            try:
+                daterange = formGroup.find_element_by_css_selector(".input-daterange")
+                obj = BasePage.DateRange(daterange)
+            except:
+                pass
+
             # endregion
             self.value = obj.value
             self.element_class = obj.element_class
@@ -780,7 +864,7 @@ class BasePage():
             self.body = self.element.find_element_by_css_selector(".panel-body")
             self.name = self.element.find_element_by_css_selector(".panel-heading .panel-title").text
 
-        def сommand(self, name):
+        def command(self, name):
             """
             Выполнение команды панели, наименование которой соответствует заданному вхождению
 
@@ -812,20 +896,35 @@ class BasePage():
             return element
 
     class Table(BaseElement):
-        search_element = None
+        name = ""
+        root = None
+        # Список колонок
         headers_list = []
+        # Список обьединенных колонок
         rowspans = []
+        # Элемент поиска
+        search_element = None
+        # Команды таблицы
         undertable = None
+        # Элемент "данных"
         data_element = None
-        search_control = None
+        # Фильтр
+        filter_control = None
+        # Столбцы
+        column_control = None
+        page_control = None
+        max_rows_count = None
 
-        def __init__(self, table):
+
+        def __init__(self, table, browser = None):
             """
             Конструктор класса, описывающий таблицу
 
             :param table: WebElement класса table
 
             """
+            if browser != None:
+                self.browser = browser
             self.element = table
             self.value = None
             try:
@@ -833,23 +932,45 @@ class BasePage():
             except:
                 self.data_element = self.element.find_element_by_css_selector(".table")
 
-            # self.undertable = self.element.find_element_by_css_selector(".ksb-table-container .undertable.table-buttons")
+            # Рассмотреть возможность перехода на неизменяемые типы данных для исключения кучи try-except
             try:
-                self.search_element = self.element.find_element_by_css_selector(".search-control")
+                self.undertable  = self.element.find_element(*BaseLocators.Table.undertable)
             except:
                 pass
+            try:
+                self.search_element  = self.element.find_element(*BaseLocators.Table.search_control)
+            except:
+                pass
+            try:
+                self.filter_control  = self.element.find_element(*BaseLocators.Table.filter_control)
+            except:
+                pass
+            try:
+                self.column_control  = self.element.find_element(*BaseLocators.Table.column_сontrol)
+            except:
+                pass
+            try:
+                self.page_control  = self.element.find_element(*BaseLocators.Table.page_control)
+            except:
+                pass
+            try:
+                page_size_dropdown_toggle = self.page_control.find_element(*BaseLocators.Table.page_size_dropdown_toggle)
+                self.max_rows_count = int(page_size_dropdown_toggle.text.split()[2])
+            except:
+                pass
+
+
             BasePage.Table.get_header(self)
 
-        def get_value(self):
+
+        def get_value(self, area = None):
             """
             Парсинг таблицы по элементу WebElement переданного в self.element
 
             :return: Распарсенная таблица в формате словаря "ШАПКА КОЛОНКИ : ЗНАЧЕНИЕ" для каждой строки
             """
-            self.value = BasePage.Table.__get_table_data_by_element(self)
+            self.value = BasePage.Table.__get_table_data_by_element(self,area)
             return self.value
-
-
         def get_header(self):
             """
             Получение шапки таблицы
@@ -870,23 +991,41 @@ class BasePage():
                     data = header.text
                 self.headers_list.append(data.strip())
                 self.rowspans.append(0)
-
+        def show_row_count(self,count):
+            self.page_control.click()
+            varinats = self.page_control.find_elements_by_xpath("//a[@class = 'dropdown-item']")
+            for varinat in varinats:
+                if varinat.get_attribute("data-page-size") == str(count):
+                    varinat.click()
+                    break
+            try:
+                self.page_control.find_element_by_xpath("//*[@class='dropdown open']")
+                self.page_control.click()
+            except:
+                pass
+            self.wait_table_loading()
         def show_all(self):
             """
             Отображение всех элементов таблицы (или 1000, если записей больше 1000)
 
             :return:
             """
-            try:
-                self.element.find_element_by_css_selector(".page-control").click()
-                time.sleep(2)
-                self.element.find_element_by_css_selector("[data-page-size='1000']").click()
-                time.sleep(1)
-                BasePage.ожидание_прогрузки_страницы(self)
-            except:
-                pass
+            self.show_row_count(1000)
+            self.update()
+        def wait_table_loading(self):
+            loading = True
+            while loading:
+                try:
+                    classes_element = self.element.find_element_by_xpath("//*[contains(@class,'ksb-table-container')]").get_attribute("class").split()
+                    if "loading" in classes_element:
+                        time.sleep(0.5)
+                    else:
+                        loading = False
+                except:
+                    pass
 
-        def get_table_by_name(self, name="", root=None):
+
+        def get_table_by_name(self, name, root=None):
             """
             Поиск таблицы по наименованию панели, в рамках которой она расположена
 
@@ -894,29 +1033,53 @@ class BasePage():
             :param root: Место поиска таблицы (например модальное окно). Если не указан - ищет на всей странице
             :return: объект класса Table
             """
+            self.name = name
             if root == None:
                 root = self.browser
-            if name != "":
+            try:
                 try:
+                    table = root.find_element_by_xpath("//*[*/@class='panel-title' and contains(.,'"+name+"')]/following-sibling::*[@class='panel-body']")
+                except:
+                    # Если таблица в разделе
                     try:
-                        table = root.find_element_by_xpath("//*[*/@class='panel-title' and contains(.,'"+name+"')]/following-sibling::*[@class='panel-body']//*[contains(@class,'ksb-table-container')]")
+                        table = root.find_element_by_xpath("//*[*/@class='panel-title'] //a[contains(.,'"+name+"')]//ancestor::*[contains(@class,'panel-title')]/parent::*//*[contains(@class,'tab-pane active')]//*[contains(@class,'ksb-table-container')]")
                     except:
-                        # Если таблица в разделе
-                        try:
-                            table = root.find_element_by_xpath("//*[*/@class='panel-title']//a[contains(.,'"+name+"')]//ancestor::*[contains(@class,'panel-title')]/parent::*//*[contains(@class,'tab-pane active')]//*[contains(@class,'ksb-table-container')]")
-                        except:
-                            # Если таблица в модальном окне
-                            table = root.find_element_by_xpath("//*[*/@class='modal-title' and contains(.,'"+name+"')]//ancestor::*[contains(@class,'modal-content')]//*[contains(@class,'ksb-table-container')]")
-                except:
-                    assert False, "Не удалось найти таблицу '" + name + "'"
-            else:
-                try:
-                    elements =  root.find_elements_by_xpath("//*[contains(@class,'ksb-table-container')]")
-                    table = elements[len(elements)-1]
-                except:
-                    assert False, "Не удалось найти таблицу"
-            return BasePage.Table(table)
+                        # Если таблица в модальном окне
+                        table = root.find_element_by_xpath("//*[*/@class='modal-title' and contains(.,'"+name+"')]//ancestor::*[contains(@class,'modal-content')]//*[contains(@class,'ksb-table-container')]")
+                obj = BasePage.Table(table,root)
+                obj.root = root
+                obj.name = name
+                return obj
+            except:
+                assert False, "Не удалось найти таблицу '" + name + '"'
 
+        def update(self):
+            obj = self.get_table_by_name(self.name, self.root)
+            self.element = obj.element
+            self.name = obj.name
+            self.root = obj.root
+            self.headers_list = obj.headers_list
+            self.rowspans = obj.rowspans
+            self.search_element = obj.search_element
+            self.undertable = obj.undertable
+            self.data_element = obj.data_element
+            self.filter_control = obj.filter_control
+            self.column_control = obj.column_control
+            self.page_control = obj.page_control
+            self.max_rows_count = obj.max_rows_count
+        def command(self, command):
+            """
+            Выполнение команды таблицы по вхождению ее наименования
+
+            :param command: Вхождение наименования команды таблицы
+
+            :return:
+            """
+            try:
+                button = self.undertable.find_element_by_xpath("//button[contains(.,'"+command+"')]")
+                button.click()
+            except:
+                assert False, 'Команда "'+command+'" не найдена'
 
 
         def __get_table_cell_data(self, value):
@@ -983,19 +1146,6 @@ class BasePage():
             except:
                 pass
             return data
-
-        def command(self, command):
-            """
-            Выполнение команды таблицы по вхождению ее наименования
-
-            :param command: Вхождение наименования команды таблицы
-
-            :return:
-            """
-
-            self.element.find_element_by_xpath(
-                "//*[contains(@class,'ksb-table-container')]//*[contains(@class,'undertable')]//*[contains(@class,'btn') and contains(.,'" + command + "')]").click()
-
         def __get_table_data_by_locator(self, how, what):
             """
             Парсинг значений таблицы по ее локатору.
@@ -1009,8 +1159,7 @@ class BasePage():
             BasePage.is_element_present(self, how, what)
             element = self.browser.find_element(how, what)
             return BasePage.get_table_by_element(element)
-
-        def __get_table_data_by_element(self):
+        def __get_table_data_by_element(self,area=None):
             """
             Парсинг значений таблицы по элементу self.element
 
@@ -1021,9 +1170,10 @@ class BasePage():
                 full_table = defaultdict(dict)
                 # region Отобразить 1000 элементов
                 try:
-                    table_element.find_element_by_css_selector(".page-control").click()
-                    table_element.find_element_by_css_selector("[data-page-size='1000']").click()
-                    BasePage.ожидание_прогрузки_страницы(self)
+
+                    # table_element.find_element_by_css_selector(".page-control").click()
+                    # table_element.find_element_by_css_selector("[data-page-size='1000']").click()
+                    # BasePage.ожидание_прогрузки_страницы(self)
                     # TO DO Костыль для прогрузки записей? Подумать как допилить, чтобы без тайма ждал прогрузки всего и вся
                     time.sleep(2)
                 except:
@@ -1104,29 +1254,30 @@ class BasePage():
                                     pass
 
                                 # Частный случай обработки, когда контент - кнока "Изменить" или "Ввод данных"
-                                try:
-                                    buttons_stack = value.find_elements_by_css_selector(".btn-stack-vertical .btn")
-                                    if len(buttons_stack) > 0:
-                                        buttons = defaultdict(dict)
-                                        for button in buttons_stack:
+                                if area == "all":
+                                    try:
+                                        buttons_stack = value.find_elements_by_css_selector(".btn-stack-vertical .btn")
+                                        if len(buttons_stack) > 0:
+                                            buttons = defaultdict(dict)
+                                            for button in buttons_stack:
+                                                button_obj = BasePage.Button(button)
+                                                if (button_obj.name.strip().find('Изменить') > -1
+                                                        or button_obj.name.strip().find('Ввод данных') > -1
+                                                        or button_obj.name.strip().find('Состав ПК') > -1):
+                                                    self.headers_list[self.header_index] = "Действие"
+                                                    buttons.update(
+                                                        {button_obj.name: BasePage.get_data_from_window(self, button_obj)})
+                                            data = buttons
+                                        else:
+                                            button = value.find_element_by_css_selector(".btn")
                                             button_obj = BasePage.Button(button)
-                                            if (button_obj.name.strip().find('Изменить') > -1
-                                                    or button_obj.name.strip().find('Ввод данных') > -1
-                                                    or button_obj.name.strip().find('Состав ПК') > -1):
+                                            if (button_obj.name.find('Изменить') > -1
+                                                    or button_obj.name.find('Ввод данных') > -1
+                                                    or button_obj.name.find('Состав ПК') > -1):
                                                 self.headers_list[self.header_index] = "Действие"
-                                                buttons.update(
-                                                    {button_obj.name: BasePage.get_data_from_window(self, button_obj)})
-                                        data = buttons
-                                    else:
-                                        button = value.find_element_by_css_selector(".btn")
-                                        button_obj = BasePage.Button(button)
-                                        if (button_obj.name.find('Изменить') > -1
-                                                or button_obj.name.find('Ввод данных') > -1
-                                                or button_obj.name.find('Состав ПК') > -1):
-                                            self.headers_list[self.header_index] = "Действие"
-                                            data = BasePage.get_data_from_window(self, button_obj)
-                                except:
-                                    pass
+                                                data = BasePage.get_data_from_window(self, button_obj)
+                                    except:
+                                        pass
                             except:
                                 pass
 
@@ -1144,7 +1295,6 @@ class BasePage():
             except:
                 pass
             return full_table
-
         def get_column_values(self, column_name):
             """
                       Парсинг значений таблицы по элементу self.element
@@ -1277,7 +1427,6 @@ class BasePage():
             except:
                 pass
             return full_table
-
         def search_str(self, str):
             """
             Поиск записи таблицы по вхождения заданной строки. Поиск средствами элемента "Поиск" таблицы
@@ -1285,8 +1434,11 @@ class BasePage():
             :return:
             """
 
+
             if self.search_element != None:
                 input = self.search_element.find_element_by_css_selector("input")
+                action_chains = ActionChains(self.browser)
+                action_chains.move_to_element(input).perform()
                 input.click()
                 try:
                     input.clean()
@@ -1312,6 +1464,7 @@ class BasePage():
                             search_in_progress = False
                 except:
                     pass
+                self.update()
 
         def search_record_by_value(self, how, what):
             """
@@ -1334,7 +1487,6 @@ class BasePage():
 
             tbodys = self.data_element.find_elements_by_css_selector("tbody")
             for tbody in tbodys:
-
                 try:
                     rows = tbody.find_elements_by_css_selector("tr")
                     index = 0
@@ -1342,15 +1494,94 @@ class BasePage():
                         row_dict = defaultdict(dict)
                         # При закрытии модального окна теряется контекст. Для этого переинцивлизация
                         try:
-                            value = row.find_elements_by_css_selector("td")[search_index]
+                            try:
+                                value = row.find_elements_by_css_selector("td")[search_index]
+                            except:
+                                row = self.data_element.find_elements_by_css_selector("tbody tr")[index]
+                                value = row.find_elements_by_css_selector("td")[search_index]
+
+                            data = BasePage.Table.__get_table_cell_data(self, value)
+                            if isinstance(data, list):
+                                data_el = data[0]
+                                data = data_el
+                            if (data == what):
+                                values = row.find_elements_by_css_selector("td")
+                                cell_index = 0
+                                for value in values:
+                                    data = BasePage.Table.__get_table_cell_data(self, value)
+                                    row_dict.update({self.headers_list[cell_index]: data})
+                                    cell_index = cell_index + 1
+                                row_dict.update({"element": row})
+                                row_dict.update({"row_index": index})
+                                row_array.append(row_dict)
                         except:
-                            row = self.data_element.find_elements_by_css_selector("tbody tr")[index]
-                            value = row.find_elements_by_css_selector("td")[search_index]
-                        data = BasePage.Table.__get_table_cell_data(self,value)
-                        if isinstance(data, list):
-                            data_el = data[0]
-                            data = data_el
-                        if (data == what):
+                            pass
+                        index = index + 1
+
+                except:
+                    pass
+
+            if len(row_array) == 0:
+                assert False, "Указанная запись таблицы со значением '" + what + "' в колонке '" + how + "' не найдена"
+            if len(row_array) == 1:
+                return row_array[0]
+            if len(row_array) > 1:
+                return row_array
+
+        def search_record_by_values(self, record_dict):
+            """
+            Поиск записи таблицы по значению в колонке
+            :param record_dict: Колонка таблицы, по которой необходимо выполнить поиск
+            record_dict = {
+            "ДОЛЖНОСТЬ СОТРУДНИКА":"директор",
+            "ДАТА ПРИЁМА": "23.02.2022",
+            "КОНТАКТНЫЕ ТЕЛЕФОНЫ": "454545"}
+
+            :return: Словарь значений, соответствующий найденной строке. Формат словаря "ШАПКА КОЛОНКИ : ЗНАЧЕНИЕ"
+            """
+
+            # region Шапка
+            row_array = []
+            how_list = record_dict.keys()
+            what_list = []
+            for how in how_list:
+                what_list.append(record_dict[how])
+
+            search_index_list = []
+            for how_obj in how_list:
+                try:
+                    search_index = self.headers_list.index(how_obj)
+                    search_index_list.append(search_index)
+                except:
+                    assert False, "В таблице нет колонки '" + how_obj + "'"
+
+            tbodys = self.data_element.find_elements_by_css_selector("tbody")
+            for tbody in tbodys:
+                try:
+                    rows = tbody.find_elements_by_css_selector("tr")
+                    index = 0
+                    for row in rows:
+                        row_dict = defaultdict(dict)
+                        check = 0
+                        # При закрытии модального окна теряется контекст. Для этого переинцивлизация
+                        for search_index in search_index_list:
+                            value_index = search_index_list.index(search_index)
+                            try:
+                                try:
+                                    value = row.find_elements_by_css_selector("td")[search_index]
+                                except:
+                                    row = self.data_element.find_elements_by_css_selector("tbody tr")[index]
+                                    value = row.find_elements_by_css_selector("td")[search_index]
+
+                                data = BasePage.Table.__get_table_cell_data(self, value)
+                                if isinstance(data, list):
+                                    data_el = data[0]
+                                    data = data_el
+                                if (data == what_list[value_index]):
+                                    check = check+1
+                            except:
+                                pass
+                        if check == len(what_list):
                             values = row.find_elements_by_css_selector("td")
                             cell_index = 0
                             for value in values:
@@ -1360,12 +1591,14 @@ class BasePage():
                             row_dict.update({"element": row})
                             row_dict.update({"row_index": index})
                             row_array.append(row_dict)
-                        index = index + 1
+                        else:
+                            index = index + 1
+
                 except:
                     pass
 
             if len(row_array) == 0:
-                assert False, "Указанная запись таблицы со значением '"+ what + "' в колонке '"+ how + "' не найдена"
+                assert False, "Указанная запись таблицы со значением '" + ", ".join(str(x) for x in what_list) + "' в колонках '" + ", ".join(str(x) for x in how_list) + "' не найдена"
             if len(row_array) == 1:
                 return row_array[0]
             if len(row_array) > 1:
@@ -1403,7 +1636,7 @@ class BasePage():
                     row.find_elements_by_css_selector("td")[index].click()
                 else:
                     index = index + 1
-
+            self.update()
         def edit_row(self, row_dict):
             """
             Переход в режим редактирования строки таблицы (выполнение команд "Изменить" или "Ввод данных)
@@ -1418,9 +1651,10 @@ class BasePage():
                     row = self.data_element.find_elements_by_css_selector("tbody tr")[row_dict["row_index"]]
                     element = row.find_elements_by_css_selector("td")[index].find_element_by_css_selector("button")
                     element.click()
+                    break
                 else:
                     index = index + 1
-
+            self.update()
         def row_command(self, row_dict, command):
             """
             Выполнение команды строки таблицы
@@ -1451,16 +1685,503 @@ class BasePage():
                 except:
                     assert False, "Команда '" + command + "' не найдена"
             '''
+            self.update()
+        def set_filter(self, filter_dict):
+            keys = filter_dict.keys()
+            if self.filter_control == None:
+                assert False, 'Таблица не содержит кнопки фильтра'
+            try:
+                filter_panel = self.element.find_element_by_xpath(
+                    '//*[contains(@class,"panel-filter") and contains(@class,"in")]/*[contains(@class,"panel-child")]/*[contains(@class,"panel-body")]')
+            except:
+                self.filter_control.click()
+                wait = True
+                t_end = time.time() + 10
+                while wait and t_end > time.time():
+                    try:
+                        self.element.find_element_by_xpath(
+                            '//*[contains(@class,"panel-filter") and contains(@class,"in")]/*[contains(@class,"panel-child")]/*[contains(@class,"panel-body")]')
+                        wait = False
+                    except:
+                        time.sleep(0.5)
+                filter_panel = self.element.find_element_by_xpath(
+                    '//*[contains(@class,"panel-filter") and contains(@class,"in")]/*[contains(@class,"panel-child")]/*[contains(@class,"panel-body")]')
+            form_groups = filter_panel.find_elements_by_xpath(".//*[contains(@class,'form-group')]")
+            form_groups_obj = []
+            form_groups_names = []
+
+            for form in form_groups:
+                obj = BasePage.FormGroup(form)
+                form_groups_obj.append(obj)
+                form_groups_names.append(obj.name)
+
+            for dict_key in filter_dict.keys():
+                if (dict_key not in form_groups_names):
+                    assert False, 'Не удалось найти фильтр по параметру "'+dict_key+'"'
+                for obj in form_groups_obj:
+                    if obj.name == dict_key:
+                        obj.set_value(filter_dict[dict_key])
+            apply_filter_button = filter_panel.find_element_by_xpath('.//button[contains(@class,"success")]')
+            apply_filter_button.click()
+            BasePage.ожидание_прогрузки_страницы(self)
+            self.filter_control.click()
+            self.update()
+        def clean_filter(self):
+            if self.filter_control == None:
+                assert False, 'Таблица не содержит кнопки фильтра'
+            try:
+                filter_panel = self.element.find_element_by_xpath(
+                    '//*[contains(@class,"panel-filter") and contains(@class,"in")]/*[contains(@class,"panel-child")]/*[contains(@class,"panel-body")]')
+            except:
+                self.filter_control.click()
+                wait = True
+                t_end = time.time() + 10
+                while wait and t_end > time.time():
+                    try:
+                        self.element.find_element_by_xpath(
+                            '//*[contains(@class,"panel-filter") and contains(@class,"in")]/*[contains(@class,"panel-child")]/*[contains(@class,"panel-body")]')
+                        wait = False
+                    except:
+                        time.sleep(0.5)
+                filter_panel = self.element.find_element_by_xpath(
+                    '//*[contains(@class,"panel-filter") and contains(@class,"in")]/*[contains(@class,"panel-child")]/*[contains(@class,"panel-body")]')
+
+            time.sleep(2)
+            clean_filter_button = filter_panel.find_element_by_xpath('.//button[contains(@class,"danger")]')
+            clean_filter_button.click()
+            self.filter_control.click()
+            self.update()
+        def show_columns(self, set_columns_dict):
+            set_columns_keys = set_columns_dict.keys()
+
+            self.column_control.click()
+            dropdown = self.column_control.find_element_by_xpath(".//*[contains(@class,'dropdown-menu')]")
+            options = dropdown.find_elements_by_xpath('.//li')
+            options_dict = defaultdict(dict)
+            for option in options:
+                try:
+                    checkbox = option.find_element_by_xpath('.//*[contains(@class,"checkbox") and contains(@class,"dropdown-item")]')
+                    checkbox_value = checkbox.find_element_by_xpath(".//input").get_attribute("value")
+                    label = checkbox.find_element_by_xpath('.//label').text
+                    options_dict.update({label:checkbox_value})
+                except:
+                    pass
+            dropdown_keys = options_dict.keys()
+            if len(dropdown_keys) > len(set_columns_keys):
+                assert False, 'Перечень колонок входного параметра больше количества колонок таблицы'
+            elif len(dropdown_keys) < len(set_columns_keys):
+                assert False, 'Перечень колонок входного параметра меньше количества колонок таблицы'
+            else:
+                for set_column in set_columns_keys:
+                    if set_column not in dropdown_keys:
+                        assert False, 'Попытка настройки отображени колонки "'+set_column+'" отсутсвующей в таблице'
+                    a = set_columns_dict[set_column]
+                    b = options_dict[set_column]
+                    if set_columns_dict[set_column] != options_dict[set_column]:
+                        for option in options:
+                            try:
+                                checkbox = option.find_element_by_xpath(
+                                    './/*[contains(@class,"checkbox") and contains(@class,"dropdown-item")]')
+                                label = checkbox.find_element_by_xpath('.//label').text
+                                if label==set_column:
+                                    checkbox.find_element_by_xpath(".//input").click()
+                                    break
+                            except:
+                                pass
+            dropdown.find_element_by_xpath(".//*[contains(@class,'save')]").click()
+            loadind = True
+            try:
+                while loadind:
+                    self.element.find_element(By.CSS_SELECTOR, ".loading")
+                    time.sleep(0.5)
+            except:
+                pass
+            self.update()
+        def export_table(self, format):
+            # Пока экспорт всех записей
+            self.element.find_element_by_xpath(".//*[contains(@class,'select_field') and contains(@class,'tight-column')]").click()
+            self.undertable.find_element_by_xpath(".//button[contains(.,'Экспорт в Excel')]").click()
+            dropdown = self.undertable.find_element_by_xpath(".//*[contains(@class,'dropdown-menu')]")
+            dropdown.click()
+            option = dropdown.find_element_by_xpath(".//*[contains(.,'Экспорт в "+format+"')]")
+            self.update()
+        def replace_rows(self, from_position, to_position):
+            reorder_column_index = self.headers_list.index('reorder_column')
+            reorder_cells = self.element.find_elements_by_xpath('.//td['+str(reorder_column_index+1)+']')
+            action_chains = ActionChains(self.browser)
+            action_chains.send_keys(Keys.HOME).perform()
+            time.sleep(0.5)
+            action_chains.move_to_element(reorder_cells[from_position-1]).perform()
+            time.sleep(0.5)
+            action_chains.drag_and_drop(reorder_cells[from_position-1], reorder_cells[to_position-1]).perform()
+            self.wait_table_loading()
+            self.update()
+            self.get_value()
+
+        def search_record_by_value(self, how, what):
+            """
+            Поиск записи таблицы по значению в колонке
+            :param how: Колонка таблицы, по которой необходимо выполнить поиск
+            :param what: Значение, которое неоюходимо найти
+            :return: Словарь значений, соответствующий найденной строке. Формат словаря "ШАПКА КОЛОНКИ : ЗНАЧЕНИЕ"
+            """
+
+            # region Шапка
+            row_array = []
+            # endregion
+            # region Отобразить 1000 элементов
+            # BasePage.Table.show_all(self)
+            # endregion
+            try:
+                search_index = self.headers_list.index(how)
+            except:
+                assert False, "В таблице нет колонки '" + how + "'"
+
+            tbodys = self.data_element.find_elements_by_css_selector("tbody")
+            for tbody in tbodys:
+
+                try:
+                    rows = tbody.find_elements_by_css_selector("tr")
+                    index = 0
+                    for row in rows:
+                        row_dict = defaultdict(dict)
+                        # При закрытии модального окна теряется контекст. Для этого переинцивлизация
+                        try:
+                            try:
+                                value = row.find_elements_by_css_selector("td")[search_index]
+                            except:
+                                row = self.data_element.find_elements_by_css_selector("tbody tr")[index]
+                                value = row.find_elements_by_css_selector("td")[search_index]
+
+                            data = BasePage.Table.__get_table_cell_data(self, value)
+                            if isinstance(data, list):
+                                data_el = data[0]
+                                data = data_el
+                            if (data == what):
+                                values = row.find_elements_by_css_selector("td")
+                                cell_index = 0
+                                for value in values:
+                                    data = BasePage.Table.__get_table_cell_data(self, value)
+                                    row_dict.update({self.headers_list[cell_index]: data})
+                                    cell_index = cell_index + 1
+                                row_dict.update({"element": row})
+                                row_dict.update({"row_index": index})
+                                row_array.append(row_dict)
+                        except:
+                            pass
+                        index = index + 1
+
+                except:
+                    pass
+
+            if len(row_array) == 0:
+                assert False, "Указанная запись таблицы со значением '" + what + "' в колонке '" + how + "' не найдена"
+            if len(row_array) == 1:
+                return row_array[0]
+            if len(row_array) > 1:
+                return row_array
+
+
+        # Базовые проверки для любой таблицы
+        def check_have_filtercontrol(self):
+            assert self.filter_control != None, "Таблица не имеет фильтрации, хотя должна"
+        def check_have_not_filtercontrol(self):
+            assert self.filter_control == None, "Таблица  имеет фильтрации, хотя не должна"
+        def check_have_searchelement(self):
+            assert self.search_element != None, "Таблица не имеет фильтрации, хотя должна"
+        def check_have_not_searchelement(self):
+            assert self.search_element == None, "Таблица  имеет фильтрации, хотя не должна"
+        def check_have_command(self, command_name):
+            try:
+                self.undertable.find_element_by_xpath("//*[contains(.,'"+command_name+"')]")
+            except:
+                assert False, "Таблица не содержит команду '" + command_name+"', хотя должна"
+        def check_have_not_command(self, command_name):
+            command_present = False
+            try:
+                self.undertable.find_element_by_xpath("//*[contains(.,'"+command_name+"')]")
+                command_present = True
+            except:
+                pass
+            if command_present:
+                assert False, "Таблица содержит команду '" + command_name + "', хотя не должна"
+
+        def check_rows_have_select(self):
+            found = False
+            for header in self.headers_list:
+                if header.find("select") > -1:
+                    found = True
+                    break
+            assert found == True, "Отсутствует возможность выбора записей таблицы, хотя возможность быть должна"
+        def check_rows_have_not_select(self):
+            found = False
+            for header in self.headers_list:
+                if header.find("select") > -1:
+                    found = True
+                    break
+            assert found == False, "Присутствует возможность выбора записей, хотя не должна"
+        def check_rows_have_reorder(self):
+            found = False
+            for header in self.headers_list:
+                if header.find("reorder") > -1:
+                    found = True
+                    break
+            assert found == True, "Отсутствует возможность изменения порядка записей, хотя быть должна"
+        def check_rows_have_not_reorder(self):
+            found = False
+            for header in self.headers_list:
+                if header.find("reorder") > -1:
+                    found = True
+                    break
+            assert found == False, "Присутствует возможность изменения порядка записей, хотя не должна"
+        def check_rows_have_remove(self):
+            found = False
+            for header in self.headers_list:
+                if header.find("remove") > -1:
+                    found = True
+                    break
+            assert found == True, "Отсутствует возможность удаления записей, хотя быть должна"
+        def check_rows_have_not_remove(self):
+            found = False
+            for header in self.headers_list:
+                if header.find("remove") > -1:
+                    found = True
+                    break
+            assert found == False, "Присутствует возможность удаления записей, хотя не должна"
+
+        def check_table_have_column(self,column_name):
+            found = False
+            for header in self.headers_list:
+                if header.find(column_name) > - 1:
+                    found = True
+                    break
+            assert found, "Таблица не содержит колонку '" + column_name + "', хотя ожидается ее наличие"
+
+        def check_table_column_count(self,count):
+            assert len(self.headers_list) == count, "Таблица имеет " + str(len(self.headers_list)) + ", хотя ожидалось " + len(count)
+
+
+        def check_rows_count(self):
+            rows_count_variants = [10,25,50,1000]
+            for variant in rows_count_variants:
+                self.show_row_count(variant)
+                self.update()
+                rows = self.data_element.find_elements_by_css_selector("tbody tr")
+                if variant < self.max_rows_count:
+                    assert len(rows) == variant, "Отображается '"+str(len(rows)) +"' строк, когжа ожидалось отображение '"+str(variant)+"' строек"
+                else:
+                    assert len(rows) == self.max_rows_count, "Отображается '"+str(len(rows)) +"' строк, когжа ожидалось отображение '"+str(self.max_rows_count)+"' строек"
+
+        def check_rows_replace(self,count=10):
+            # count - количество строк таблицы в рамках которой будет перебор
+            self.show_row_count(count)
+            self.get_value()
+            self.update()
+            '''
+            С какой строки на какую будет выполнено перемещение
+            1. С первой на последнюю
+            2. С последней на первую
+            3. С первой в центр (center)
+            4. С центра (center) на первую
+            5. С последней в центр (center)
+            6. С центра (center) на последнюю
+            Если количество записей 5 и болше
+            7. С чуть ниже начала (little), до чуть выше конца (big)
+            8. С чуть выше конца (big), до чуть ниже начала (little)
+            '''
+            first_number = 1
+            last_number = 10 if self.max_rows_count > 10 else self.max_rows_count
+            center = last_number // 2
+            little = center // 2
+            big = little + center // 2
+
+            places = [[first_number, last_number], [last_number, first_number], [first_number, center],
+                      [center, first_number], [last_number, center], [center, last_number]]
+            if last_number > 4:
+                places.append([little,big])
+                places.append([big,little])
+
+            for place in places:
+                first = place[0]
+                second = place[1]
+
+                value_before = self.value
+                self.replace_rows(first, second)
+                value_after = self.value
+
+
+                # Ручная перестановка и проверка, что после ручной перестановки получаем ту же самую таблицу
+                keys = value_before[0].keys()
+
+                # Если перемещаем строку вниз
+                if first < second:
+
+                    for i in range(0,count):
+                        if i<first-1 or i>second-1:
+                            for key in keys:
+                                a = value_before[i][key]
+                                b = value_after[i][key]
+                                assert a == b, "Некорректное изменение порядка столбцов таблицы. До - '"+a+"', после '"+b+"'"
+
+                        if i == first-1:
+                            for key in keys:
+                                a = value_before[first-1][key]
+                                b = value_after[second-1][key]
+                                try:
+                                    assert a == b, "Некорректное изменение порядка столбцов таблицы. До - '"+a+"', после '"+b+"'"
+                                except:
+                                    pass
+
+                        if i in range(first, second):
+                            for key in keys:
+                                a = value_before[i][key]
+                                b = value_after[i-1][key]
+                                assert a == b, "Некорректное изменение порядка столбцов таблицы. До - '"+a+"', после '"+b+"'"
+
+                # Есди переместили строку вверх
+                if first>second:
+                    for i in range(0, count):
+                        if i < second - 1 or i > first - 1:
+                            for key in keys:
+                                try:
+                                    a = value_before[i][key]
+                                except:
+                                    pass
+                                b = value_after[i][key]
+                                assert a == b, "Некорректное изменение порядка столбцов таблицы. До - '" + a + "', после '" + b + "'"
+
+                        if i == second - 1:
+                            for key in keys:
+                                a = value_before[first - 1][key]
+                                b = value_after[second - 1][key]
+                                assert a == b, "Некорректное изменение порядка столбцов таблицы. До - '" + a + "', после '" + b + "'"
+
+                        if i in range(second, first):
+                            for key in keys:
+                                if i>0:
+                                    a = value_before[i-1][key]
+                                    b = value_after[i][key]
+                                    assert a == b, "Некорректное изменение порядка столбцов таблицы. До - '" + a + "', после '" + b + "'"
+                self.replace_rows(second, first)
+
+
+
+
+        def __check_rows_order_column(self, column_name):
+            if column_name in self.headers_list:
+                index = self.headers_list.index(column_name)
+                order_column = self.element.find_elements_by_xpath("//thead//th")[index]
+
+                try:
+                    sorting_element = order_column.find_element_by_xpath("//*[contains(@class,'fa-sort')]")
+                except:
+                    assert False, "Столбец '" + column_name + "' не может быть отсортирован"
+
+                sorting_element_classes = sorting_element.get_attribute("class")
+                if sorting_element_classes.find("fa-sort-acs") > -1 or sorting_element_classes.find("fa-sort-decs") > -1:
+                    sorting_element.click()
+                self.get_value()
+                not_sorting_data = self.value
+
+                # Сортировка по возростанию
+                while  sorting_element_classes.find('fa-sort-asc') == -1:
+                    sorting_element.click()
+                    self.wait_table_loading()
+                    self.update()
+                    order_column = self.element.find_elements_by_xpath("//thead//th")[index]
+                    sorting_element = order_column.find_element_by_xpath("//*[contains(@class,'fa-sort')]")
+                    sorting_element_classes = sorting_element.get_attribute("class")
+
+                self.get_value()
+                up_sorting_data = self.value
+
+                # Сортировка по убыванию
+                while sorting_element_classes.find('fa-sort-desc') == -1:
+                    sorting_element.click()
+                    self.wait_table_loading()
+                    self.update()
+                    order_column = self.element.find_elements_by_xpath("//thead//th")[index]
+                    sorting_element = order_column.find_element_by_xpath("//*[contains(@class,'fa-sort')]")
+                    sorting_element_classes = sorting_element.get_attribute("class")
+
+                self.get_value()
+                down_sorting_data = self.value
+
+                not_sorting_data_list = []
+                up_sorting_data_user = []
+                down_sorting_data_user = []
+
+                up_sorting_data_list = []
+                down_sorting_data_list = []
+
+                for index in not_sorting_data:
+                    dict = not_sorting_data[index]
+                    not_sorting_data_list.append(dict[column_name])
+                    up_sorting_data_user.append(dict[column_name])
+                    down_sorting_data_user.append(dict[column_name])
+
+                for index in up_sorting_data:
+                    dict = up_sorting_data[index]
+                    up_sorting_data_list.append(dict[column_name])
+
+                for index in down_sorting_data:
+                    dict = down_sorting_data[index]
+                    down_sorting_data_list.append(dict[column_name])
+
+                up_sorting_data_user.sort()
+                down_sorting_data_user.sort(reverse=True)
+
+                # Сортировка питоном - в подстроке буквы после символов. В АльфаДок наоборот
+                # Не понятен алгоритм сортировки в АльфаДок - он не стандартный. Временно убираю проверку
+                for list,data in zip(up_sorting_data_list,up_sorting_data_user):
+                    assert list == data, "Некорректная сортировка значений столбца по возрастанию"
+                for list,data in zip(down_sorting_data_list,down_sorting_data_user):
+                    assert list == data, "Некорректная сортировка значений столбца по убыванию"
+            else:
+                assert False, "Указанный столбец '" + column_name + "' отсутствует в таблице"
+
+        def check_rows_search(self,column_name):
+            data = self.get_value()
+            for a in range(0,random.randint(0,len(data))-1):
+                i = random.randint(0,len(data))
+
+                try:
+                    row_data = data[i][column_name]
+                except:
+                    break
+                self.search_str(row_data)
+                sorted_data = self.get_value()
+
+                for j in sorted_data:
+                    found = sorted_data[j][column_name]
+                    assert found.find(row_data) > -1, "Некорректный поиск в таблице: по поиску строки '"+row_data+"' найдена запись '"+found+"'"
+                self.update()
+                self.search_str("")
+                self.get_value()
+
+        def check_have_errors(self):
+            try:
+                error_message = self.element.find_elements_by_xpath("//*[contains(@class,'error-message')]/div/p")
+            except:
+                pass
+            if len(error_message)>0:
+                table_name = error_message[0].find_element_by_xpath("./strong").text
+                message = error_message[1].text
+                assert False, "Ошибка таблицы '"+table_name+"' c текстом '"+message+"'"
+
 
     class ModalWindow():
         """
         Появляющаяся Форма с разделением на 3 составные части
         """
+        browser = None
         header = None
+        header_text = ""
         body = None
         footer = None
         name = None
         element = None
+        allert_block = None
 
         def __init__(self, element):
             """
@@ -1470,9 +2191,18 @@ class BasePage():
             # .modal-content
             self.element = element
             self.header = self.element.find_element_by_css_selector(".modal-header")
+            try:
+                title = self.header.find_element_by_css_selector(".modal-title")
+                self.header_text = title.text
+            except:
+                pass
             self.name = self.getWindowName()
             self.body = self.element.find_element_by_css_selector(".modal-body")
             self.footer = self.element.find_element_by_css_selector(".modal-footer")
+            try:
+                self.allert_block = self.body.find_element_by_xpath("//*[contains(@class, 'alert-block')]/p").text
+            except:
+                pass
 
         def getWindowName(self):
             """
@@ -1502,7 +2232,7 @@ class BasePage():
             time.sleep(0.5)
             return BasePage.ModalWindow(window)
 
-        def сommand(self, name):
+        def command(self, name):
             """
             Выполнение команды модального окна по вхождению наименования команды
             :param name: Вхождение наименования строки
@@ -1598,7 +2328,8 @@ class BasePage():
                 except:
                     assert False, "Модальное окно не содержит параметр '" + parametr + "'"
             return BasePage.FormGroup(formGroup)
-        
+
+
         def upload_file(self, file_path: str):
             """Загрузка файла в модальном окне
             :param file_path: полный путь до загружаемого файла"""
@@ -1612,7 +2343,36 @@ class BasePage():
             except Exception as e:
                 assert False, "Файл не загружается;" + e
 
-    class найти_элементы_на_странице:
+        def get_allert_message(self):
+            try:
+                self.allert_block = self.body.find_element_by_xpath("//*[contains(@class, 'alert-block')]/p").text
+            except:
+                pass
+
+        # Базовые проверки
+
+        def check_window_header_text(self, text):
+            assert self.header_text == text, "Модальное окно содержит неожидаемое имя '"+self.header_text+"'. Ожидается имя '"+text+"'"
+
+        def check_window_have_formgroup(self, formgroup_name):
+            try:
+                self.search_parametr(formgroup_name)
+            except:
+                assert False, "Модальное окно не содержит параметр с именем '"+formgroup_name+", хотя должно"
+
+        def check_window_have_command(self, command_name):
+            try:
+                self.footer.find_element_by_xpath("//*[contains(.,'"+command_name+"')]")
+            except:
+                assert False, "Модальное окно не содержит команду '"+command_name+"', хотя ожидается ее наличие"
+
+        def check_window_have_allert_message(self,message):
+            self.get_allert_message()
+            assert self.allert_block != "", 'Модальное окно не содержит сообщения ошибки, хотя должно отображать сообщение "'+message+"'"
+            assert self.allert_block == message, 'Модальное окно отображает сообщения ошибки "'+self.allert_block+'", хотя должно отображать сообщение "'+message+"'"
+
+    '''  
+     class найти_элементы_на_странице:
         """
         ищет элементы в переданной области
 
@@ -1665,7 +2425,7 @@ class BasePage():
             assert search_area.find_element_by_xpath(f"//*[contains(@class,'ksb-table-container')]" \
                                                      f"//*[contains(@class,'undertable')]" \
                                                      f"//*[contains(@class,'btn') and contains(.,'{btn_text}')]")
-
+    '''
     class WizardTab:
         element = None  # li
         state = "Не заполнен"
@@ -2121,5 +2881,3 @@ class BasePage():
                     return True
                 except:
                     return False
-
-

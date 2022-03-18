@@ -166,27 +166,63 @@ class TestGeneral:
     def test_step3(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/employees")
         BasePage.ожидание_прогрузки_страницы(self)
-        """
+        '''
         name_file = 'worker.xlsx'
         BasePage.file_upload(self, name_file)
         BasePage.file_upload(self, name_file, delete=False)
-        """
 
         table = BasePage.Table.get_table_by_name(self, "Сотрудники организации")
-        rows = table.search_record_by_value("ФИО СОТРУДНИКА", "Вечный Урок Насреддинович")
-        BasePage.file_export(self)
-        self.browser.refresh(self)
-        BasePage.all_delete(self)
+        # table.search_record_by_value("ФИО СОТРУДНИКА", "Иванов Иван Иванович")
 
+        """Поиск"""
+        table.check_rows_search("ФИО СОТРУДНИКА")
+        table.check_rows_search("ДОЛЖНОСТЬ СОТРУДНИКА")
+        # table.check_rows_search("КОНТАКТНЫЕ ТЕЛЕФОНЫ")
+        # table.check_rows_search("АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ")
+
+        table.check_have_filtercontrol()
+
+        """Кол-во элементов на странице"""
+        table.check_rows_count()
+
+        table.check_table_have_column("ФИО СОТРУДНИКА")
+        table.check_table_have_column("ДОЛЖНОСТЬ СОТРУДНИКА")
+        table.check_table_have_column("КОНТАКТНЫЕ ТЕЛЕФОНЫ")
+        table.check_table_have_column("АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ")
+        table.check_table_have_column("ДАТА ПРИЁМА")
+        table.check_table_have_column("СОЗДАНО")
+        table.check_table_have_column("ИЗМЕНЕНО")
+
+        """Проверка на возможность изменения порядка записей"""
+        table.check_rows_have_reorder()
+
+        """Перемещение"""
+        #table.check_rows_replace(count=10)
+
+        """Првоерка выбора записей"""
+        table.check_rows_have_select()
+
+        """Ошибка таблицы"""
+        table.check_have_errors()
+
+        """Экспорт в Excel"""
+        BasePage.file_export(self)
         time.sleep(5)
+
+        """Удаление"""
+        BasePage.all_delete(self)
+        time.sleep(5)
+        '''
+        BasePage.not_next_step(self)
+
 
     def test_step4(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/personal_data_crypto_standalone/#step/crypto-access-std")
         BasePage.ожидание_прогрузки_страницы(self)
 
-        '''
+        """
         Ответственный пользователь криптосредств
-        '''
+        
 
         self.browser.find_element_by_xpath("//*[@class='btn btn-info']").click()
         BasePage.ожидание_прогрузки_страницы(self)
@@ -195,38 +231,121 @@ class TestGeneral:
         rows = table.search_record_by_value("ДОЛЖНОСТЬ СОТРУДНИКА", "телохранитель")
         self.browser.find_elements_by_xpath("//*[@class='radio radio-awesome radio-success radio-inline']")
         self.browser.find_element_by_xpath("//*[@class='modal-footer']/*[contains(text(), 'Выбрать сотрудника')]").click()
+        """
 
+        table = BasePage.Table.get_table_by_name(self, "Перечень лиц, имеющих доступ в помещения")
 
+        table.check_table_have_column("ФИО")
+        table.check_table_have_column("ДОЛЖНОСТЬ")
+        table.check_table_have_column("ДОПУСК К КРИПТОСРЕДСТВАМ")
 
-        time.sleep(5)
+        """Поиск"""
+        table.check_rows_search("ФИО")
+        table.check_rows_search("ДОЛЖНОСТЬ")
 
+        """ФИЛЬТР"""
+        table.check_have_not_filtercontrol()
 
+        """Кол-во элементов на странице"""
+        table.check_rows_count()
 
+        """Проверка на отсутствие кнопки перемещения"""
+        table.check_rows_have_not_reorder()
 
+        """Перемещение"""
+        # table.check_rows_replace(count=10)
 
+        """Првоерка выбора записей"""
+        table.check_rows_have_select()
 
+        """Ошибка таблицы"""
+        table.check_have_errors()
 
-
-        # '''
-        # Перечень лиц, имеющих доступ в помещения, содержащие криптосредства,
-        # в том числе допущенных к работе с криптосредствами
-        # '''
-        # add_access = self.browser.find_element_by_xpath("//*[@class='btn btn-sm btn-success']")
-        # add_access.click()
+        # """Удаление"""
+        # BasePage.all_delete(self)
         # time.sleep(5)
-        # l = self.browser.find_elements_by_xpath("//*[contains(@class, 'selectmultiplepersonaccesstable ')]/tbody/tr")
-        #
-        # add_all_fio = WebDriverWait(self.browser, 5).until(
-        #     EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Выбрать всех')]"))
-        # )
-        # add_all_fio.click()
 
+        BasePage.not_next_step(self)
 
     def test_step5(self):
         self.browser.get(self.common_address + "cabinet/main_wizard/#step/rooms_vaults")
         BasePage.ожидание_прогрузки_страницы(self)
+
         """
         name_file = 'cabinet.xls'
         BasePage.file_upload(self, name_file)
         """
+
+        # BasePage.file_export(self)
+
+        table = BasePage.Table.get_table_by_name(self, "Перечень помещений")
+
+        """Поиск"""
+        table.check_rows_search("ПОМЕЩЕНИЕ")
+
+        """Кол-во элементов на странице"""
+        table.check_rows_count()
+
+        BasePage.ожидание_прогрузки_страницы(self)
+        table.check_table_have_column("ПОМЕЩЕНИЕ")
+        table.check_table_have_column("АДРЕС")
+
+        """Проверка на возможность изменения порядка записей"""
+        table.check_rows_have_reorder()
+
+        """Перемещение"""
+        # table.check_rows_replace(count=10)
+
+        """Првоерка выбора записей"""
+        table.check_rows_have_select()
+
+        """Ошибка таблицы"""
+        table.check_have_errors()
+
+        '''
+        """Экспорт в Excel"""
         BasePage.file_export(self)
+        time.sleep(5)
+
+        """Удаление"""
+        BasePage.all_delete(self)
+        time.sleep(5)
+        '''
+
+        table = BasePage.Table.get_table_by_name(self, "Перечень хранилищ")
+
+
+        """Поиск"""
+        table.check_rows_search("УЧЁТНЫЙ НОМЕР")
+        table.check_rows_search("НАИМЕНОВАНИЕ ХРАНИЛИЩА (СЕЙФ, МЕТАЛЛИЧЕСКИЙ ШКАФ)")
+        table.check_rows_search("ИНВЕНТАРНЫЙ НОМЕР")
+
+        table.check_rows_search("МЕСТОНАХОЖДЕНИЕ (ПОДРАЗДЕЛЕНИЕ, НОМЕР КОМНАТЫ)")
+        table.check_rows_search("ЧТО НАХОДИТСЯ (НАИМЕНОВАНИЕ МАТЕРИАЛЬНЫХ НОСИТЕЛЕЙ)")
+        #table.check_rows_search("КОЛИЧЕСТВО КОМПЛЕКТОВ КЛЮЧЕЙ И ИХ НОМЕРА")
+        BasePage.ожидание_прогрузки_страницы(self)
+
+        #"""Кол-во элементов на странице"""
+        #table.check_rows_count()
+
+
+
+        table.check_table_have_column("УЧЁТНЫЙ НОМЕР")
+        table.check_table_have_column("НАИМЕНОВАНИЕ ХРАНИЛИЩА (СЕЙФ, МЕТАЛЛИЧЕСКИЙ ШКАФ)")
+        table.check_table_have_column("ИНВЕНТАРНЫЙ НОМЕР")
+        table.check_table_have_column("МЕСТОНАХОЖДЕНИЕ (ПОДРАЗДЕЛЕНИЕ, НОМЕР КОМНАТЫ)")
+        table.check_table_have_column("ЧТО НАХОДИТСЯ (НАИМЕНОВАНИЕ МАТЕРИАЛЬНЫХ НОСИТЕЛЕЙ)")
+        table.check_table_have_column("ФАМИЛИЯ ОТВЕТСТВЕННОГО ЗА СЕЙФ (ШКАФ)")
+        table.check_table_have_column("КОЛИЧЕСТВО КОМПЛЕКТОВ КЛЮЧЕЙ И ИХ НОМЕРА")
+
+        """Проверка на возможность изменения порядка записей"""
+        table.check_rows_have_reorder()
+
+        """Перемещение"""
+        # table.check_rows_replace(count=10)
+
+        """Првоерка выбора записей"""
+        table.check_rows_have_select()
+
+        """Ошибка таблицы"""
+        table.check_have_errors()
